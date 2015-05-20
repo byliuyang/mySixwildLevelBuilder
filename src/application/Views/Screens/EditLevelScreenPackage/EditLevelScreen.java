@@ -1,4 +1,4 @@
-package application.Views.Screens.GameScreenPackage;
+package application.Views.Screens.EditLevelScreenPackage;
 
 import application.Contracts.ImageContract;
 import application.Contracts.SoundsContract;
@@ -20,7 +20,7 @@ import java.util.Timer;
 /**
  *
  */
-public class GameScreen extends NavigableScreen implements IModelUpdated {
+public class EditLevelScreen extends NavigableScreen implements IModelUpdated {
     //    Grid view bounds
     public static final Rectangle GRID_VIEW_BOUNDS = new Rectangle(192, NAV_BAR_HEIGHT + STATUS_BAR_HEIGHT + 20, 640, 640);
     //    Score progress view bounds
@@ -53,7 +53,7 @@ public class GameScreen extends NavigableScreen implements IModelUpdated {
     AudioClip resetBoardSpecialMoveSound;
     AudioClip restartLevelSpecialMoveSound;
 
-    public GameScreen(String title, Application app) {
+    public EditLevelScreen(String title, Application app) {
 
         super(title, app);
     }
@@ -185,7 +185,7 @@ public class GameScreen extends NavigableScreen implements IModelUpdated {
                     timer = null;
                 }
             }
-            app.getGameScreen().getWinLevelSound().play();
+            app.getEditLevelScreen().getWinLevelSound().play();
             JOptionPane.showMessageDialog(app, "Level complete!");
 
             long levelID = level.getId().getValue();

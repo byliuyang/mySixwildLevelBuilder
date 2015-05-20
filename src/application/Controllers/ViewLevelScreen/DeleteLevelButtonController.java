@@ -13,12 +13,12 @@ import java.awt.event.MouseEvent;
 /**
  *
  */
-public class StartLevelButtonController extends ButtonController {
+public class DeleteLevelButtonController extends ButtonController {
 
     Application app;
     LevelDetailPanel levelDetailPanel;
 
-    public StartLevelButtonController(StyledButton button, LevelDetailPanel levelDetailPanel, Application app) {
+    public DeleteLevelButtonController(StyledButton button, LevelDetailPanel levelDetailPanel, Application app) {
         super(button);
         this.levelDetailPanel = levelDetailPanel;
         this.app = app;

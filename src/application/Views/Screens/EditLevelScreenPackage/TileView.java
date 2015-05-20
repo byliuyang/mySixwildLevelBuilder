@@ -1,4 +1,4 @@
-package application.Views.Screens.GameScreenPackage;
+package application.Views.Screens.EditLevelScreenPackage;
 
 import application.Models.Tile;
 import application.Utilities;

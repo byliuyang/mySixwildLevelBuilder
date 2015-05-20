@@ -1,4 +1,4 @@
-package application.Views.Screens.GameScreenPackage;
+package application.Views.Screens.EditLevelScreenPackage;
 
 import application.Controllers.ButtonController;
 import application.Models.Grid;
