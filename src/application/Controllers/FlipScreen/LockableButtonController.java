@@ -22,7 +22,7 @@ public class LockableButtonController extends ButtonController {
     }
 
     @Override
-    public void mouseClicked(MouseEvent e) {
+    public void mousePressed(MouseEvent e) {
         LockableButtonView activeView = listPanel.getActiveView();
         if (activeView != null) {
             listPanel.getActiveView().getButton().inactive();

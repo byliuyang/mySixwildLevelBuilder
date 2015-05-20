@@ -50,5 +50,15 @@ public class TextContact {
                     "</ul>" +
             "</html>";
 
-    public static final String ADD_NEW_LEVEL_TEXT = "New level";
+    public static final String SELECT_LEVEL_TYPE_TEXT = "Select level type";
+    public static final String NUMBER_SPECIAL_MOVE_TEXT = "Special move limits";
+    public static final String TIME_LIMIT_TEXT = "Time limit";
+    public static final String MOVE_LIMIT_TEXT = "Move limit";
+    public static final String STAR_MILE_STONES_TEXT = "Star milestones";
+
+    public static final String TILE_PROBABILITIES_TEXT = "Tile probabilities";
+    public static final String MULTIPLIER_PROBABILITIES_TEXT = "Multiplier probabilities";
+
+    public static final String SELECT_GRID_ELEMENTS_TEXT = "Select grid elements";
+    public static final String SELECT_MULTIPLIER_TEXT = "Select multipliers";
 }

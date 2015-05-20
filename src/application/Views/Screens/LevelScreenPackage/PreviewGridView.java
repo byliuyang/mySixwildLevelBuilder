@@ -18,14 +18,14 @@ public class PreviewGridView extends TransitableView implements IModelUpdated {
     //    Grid view size
     final Dimension GRID_VIEW_SIZE = new Dimension(142, 142);
     //    Grid view paddings
-    final int GRID_VIEW_PADDING_LEFT = 4;
-    final int GRID_VIEW_PADDING_TOP = 4;
+    final int GRID_VIEW_PADDING_LEFT = 3;
+    final int GRID_VIEW_PADDING_TOP = 3;
 
-    final Color SQUARE_NORMAL_BACK_COLOR = new Color(72, 111, 74);
+    final Color SQUARE_NORMAL_BACK_COLOR = new Color(60, 94, 62, 50);
     final Color SQUARE_HOVERED_BACK_COLOR = new Color(250, 212, 0);
     final Color SQUARE_DISABLED_BACK_COLOR = new Color(165, 165, 165);
 
-    final Color PREVIEW_GRID_BACK_COLOR = new Color(72,111,74);
+    final Color PREVIEW_GRID_BACK_COLOR = new Color(72, 111, 74);
 
     PreviewSquareView[][] previewSquareViews;
     Application app;
@@ -82,6 +82,8 @@ public class PreviewGridView extends TransitableView implements IModelUpdated {
                 }
             }
         }
+
+        repaint();
     }
 
     @Override

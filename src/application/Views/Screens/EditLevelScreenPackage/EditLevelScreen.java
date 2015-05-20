@@ -1,57 +1,68 @@
 package application.Views.Screens.EditLevelScreenPackage;
 
-import application.Contracts.ImageContract;
-import application.Contracts.SoundsContract;
-import application.Models.Levels.*;
-import application.Models.Value;
+import application.Contracts.LevelTypeContract;
+import application.Models.Levels.Level;
 import application.Utilities;
 import application.Views.Application;
-import application.Views.Components.*;
+import application.Views.Components.EditLevelToolBar;
+import application.Views.Components.StyledButton;
 import application.Views.IModelUpdated;
+import application.Views.Screens.EditLevelScreenPackage.LevelPreferencePanels.LevelPreferencePanel;
 import application.Views.Screens.NavigableScreen;
 
 import javax.swing.*;
-import java.applet.Applet;
-import java.applet.AudioClip;
 import java.awt.*;
-import java.io.File;
-import java.util.Timer;
 
 /**
  *
  */
 public class EditLevelScreen extends NavigableScreen implements IModelUpdated {
-    //    Grid view bounds
-    public static final Rectangle GRID_VIEW_BOUNDS = new Rectangle(192, NAV_BAR_HEIGHT + STATUS_BAR_HEIGHT + 20, 640, 640);
-    //    Score progress view bounds
-    public static final Rectangle SCORE_PROGRESS_VIEW_BOUNDS = new Rectangle(50, NAV_BAR_HEIGHT + STATUS_BAR_HEIGHT + 20, 126, 562);
-    //    Score progress view size
-    public static final Dimension SCORE_PROGRESS_VIEW_SIZE = new Dimension(126, 562);
-    //    Refresh button round
-    final int RESET_BUTTON_ROUND = 10;
-    //    Reset button size
-    final Dimension RESET_BUTTON_SIZE = new Dimension(78, 78);
-    //    Reset button bounds
-    final Rectangle RESET_BUTTON_BOUNDS = new Rectangle(98, Application.WINDOW_HEIGHT - 21 - 78, 78, 78);
 
-    //    Background color of reset button
-    final Color RESET_BUTTON_BACK_COLOR = new Color(112, 147, 113);
-    //    Reset button actived background color
-    final Color RESET_BUTTON__ACTIVE_COLOR = new Color(86, 116, 87);
+    //    Preferences panel size
+    public static final Dimension PREFERENCE_PANEL_SIZE = new Dimension(
+            325,
+            1460
+    );
+
+    //    Preference panel bounds
+    public static final Rectangle PREFERENCE_PANEL_BOUNDS = new Rectangle(
+            0,
+            0,
+            325,
+            1460
+    );
+
+    public static final Rectangle PREFERENCE_SCROLL_PANE_BOUNDS = new Rectangle(
+            0,
+            0,
+            345,
+            Application.WINDOW_HEIGHT - NAV_BAR_HEIGHT - STATUS_BAR_HEIGHT
+    );
+
+    //    Grid view bounds
+    public static final Rectangle GRID_VIEW_BOUNDS = new Rectangle(364, 20, 640, 640);
+
+    public static final Rectangle LAYER_PANE_BOUNDS = new Rectangle(
+            0,
+            NAV_BAR_HEIGHT + STATUS_BAR_HEIGHT,
+            Application.WINDOW_WIDTH,
+            Application.WINDOW_HEIGHT - NAV_BAR_HEIGHT - STATUS_BAR_HEIGHT
+    );
+
+
+    public static final Color BORDER_COLOR_DARK = new Color(229, 229, 229);
+
 
     Level level;
-    ScoreProgressView scoreProgressView;
-    PopupBox popupBox;
-    ImageButton refreshButton;
     GridView gridView;
-    Timer timer;
 
-    AudioClip winLevelSound;
-    AudioClip tileDisappearSound;
-    AudioClip removeTileSpecialMoveSound;
-    AudioClip swapSquaresSpecialMoveSound;
-    AudioClip resetBoardSpecialMoveSound;
-    AudioClip restartLevelSpecialMoveSound;
+    LevelPreferencePanel levelPreferencePanel;
+
+    StyledButton activeView;
+
+    JLayeredPane layeredPane;
+
+    int levelId;
 
     public EditLevelScreen(String title, Application app) {
 
@@ -60,66 +71,36 @@ public class EditLevelScreen extends NavigableScreen implements IModelUpdated {
 
     public void initialize() {
 
-        setLayout(null);
+        getLevel();
 
         remove(getNavigationBar());
 
-//        Setup score progress view
-        add(getScoreProgressView());
-        getScoreProgressView().setScore(level.getScore());
-        getScoreProgressView().initialize();
-
-
-//        Setup grid view
-        getGridView().setBounds(GRID_VIEW_BOUNDS);
-        add(getGridView());
-        getGridView().initialize();
-
-        getRefreshButton().setBounds(RESET_BUTTON_BOUNDS);
-
-        add(getRefreshButton());
-
-        getRefreshButton().repaint();
-
-//        Sounds
-        try {
-
-            winLevelSound = Applet.newAudioClip(
-                    new File(System.getProperty(Application.ROOT_PATH)
-                            + SoundsContract.WIN_LEVEL_SOUND).toURI().toURL()
-            );
-
-            tileDisappearSound = Applet.newAudioClip(
-                    new File(System.getProperty(Application.ROOT_PATH)
-                            + SoundsContract.DROP_TILE_SOUND).toURI().toURL()
-            );
-            removeTileSpecialMoveSound = Applet.newAudioClip(
-                    new File(System.getProperty(Application.ROOT_PATH)
-                            + SoundsContract.REMOVE_TILE_SPECIAL_MOVE_SOUND).toURI().toURL()
-            );
-
-            resetBoardSpecialMoveSound = Applet.newAudioClip(
-                    new File(System.getProperty(Application.ROOT_PATH)
-                            + SoundsContract.RESET_BOARD_SPECIAL_MOVE_SOUND).toURI().toURL()
-            );
-
-            restartLevelSpecialMoveSound = Applet.newAudioClip(
-                    new File(System.getProperty(Application.ROOT_PATH)
-                            + SoundsContract.RESTART_LEVEL_SOUND).toURI().toURL()
-            );
-
-            swapSquaresSpecialMoveSound = Applet.newAudioClip(
-                    new File(System.getProperty(Application.ROOT_PATH)
-                            + SoundsContract.SWAP_SQUARE_SPECIAL_MOVE_SOUND).toURI().toURL()
-            );
-
-            winLevelSound.play();
-
-        } catch (Exception ex) {
-            ex.printStackTrace();
+        if (layeredPane != null) {
+            remove(layeredPane);
+            levelPreferencePanel = null;
         }
 
+        layeredPane = new JLayeredPane();
 
+        activeView = null;
+
+        add(getEditLevelToolBar());
+
+        getEditLevelToolBar().repaint();
+
+        getLevelPreferencePanel();
+
+        //        Puzzle is default level
+        modelChanged();
+
+        getGridView().setBounds(GRID_VIEW_BOUNDS);
+
+        layeredPane.add(getGridView(), Utilities.BOTTOM_LAYER);
+        layeredPane.setBounds(LAYER_PANE_BOUNDS);
+        add(layeredPane);
+
+        getGridView().initialize(this);
+        getGridView().modelChanged();
     }
 
     public GridView getGridView() {
@@ -130,106 +111,13 @@ public class EditLevelScreen extends NavigableScreen implements IModelUpdated {
         return gridView;
     }
 
-    public ImageButton getRefreshButton() {
-        if (refreshButton == null) {
-            refreshButton = new ImageButton(
-                    ImageContract.RESET_BUTTON_IMAGE,
-                    ImageContract.RESET_BUTTON_IMAGE,
-                    ImageContract.RESET_BUTTON_IMAGE,
-                    ImageContract.RESET_BUTTON_IMAGE,
-                    RESET_BUTTON_BACK_COLOR,
-                    RESET_BUTTON__ACTIVE_COLOR,
-                    RESET_BUTTON_BACK_COLOR,
-                    RESET_BUTTON_BACK_COLOR,
-                    RESET_BUTTON_ROUND
-
-            );
-
-            refreshButton.setPreferredSize(RESET_BUTTON_SIZE);
-            refreshButton.setMaximumSize(RESET_BUTTON_SIZE);
-            refreshButton.setMinimumSize(RESET_BUTTON_SIZE);
-        }
-        return refreshButton;
-    }
-
-    public ScoreProgressView getScoreProgressView() {
-        if (scoreProgressView == null) {
-            scoreProgressView = new ScoreProgressView();
-            scoreProgressView.setBounds(SCORE_PROGRESS_VIEW_BOUNDS);
-        }
-        return scoreProgressView;
-    }
-
     public Level getLevel() {
-        return level;
-    }
 
-    public void updateScore(Value amount) {
-        level.updateScore(amount);
-        getScoreProgressView().modelChanged();
-    }
-
-    @Override
-    public void modelChanged() {
-        getScoreProgressView().modelChanged();
-        getGridView().modelChanged();
-    }
-
-    public void levelCompleted() {
-
-
-        if (level.hasWon()) {
-            if (level instanceof LightningLevel) {
-                if (timer != null) {
-                    timer.cancel();
-                    timer = null;
-                }
-            }
-            app.getEditLevelScreen().getWinLevelSound().play();
-            JOptionPane.showMessageDialog(app, "Level complete!");
-
-            long levelID = level.getId().getValue();
-
-            Utilities.updateLevelState(level);
-
-//            Unlock next level
-            if (levelID < app.getLevelsScreen().getNumberLevels()) {
-                if (level.getScore().getStarNumber() >= 1) {
-                    app.getLevelsScreen().getLevelFlipPagePanel().getLevelListPanel().unlockLevel(levelID + 1);
-                }
-            }
-
-            //                Go to level screen
-            app.switchTo(app.getLevelsScreen());
+        if (level == null) {
+            level = LevelTypeContract.generateDefaultPuzzleLevel(levelId);
         }
-    }
 
-    public AudioClip getWinLevelSound() {
-        return winLevelSound;
-    }
-
-    public AudioClip getRemoveTileSpecialMoveSound() {
-        return removeTileSpecialMoveSound;
-    }
-
-    public AudioClip getTileDisappearSound() {
-        return tileDisappearSound;
-    }
-
-    public AudioClip getResetBoardSpecialMoveSound() {
-        return resetBoardSpecialMoveSound;
-    }
-
-    public AudioClip getRestartLevelSpecialMoveSound() {
-        return restartLevelSpecialMoveSound;
-    }
-
-    public AudioClip getSwapSquaresSpecialMoveSound() {
-        return swapSquaresSpecialMoveSound;
-    }
-
-    public Timer getTimer() {
-        return timer;
+        return level;
     }
 
     public void setLevel(Level level) {
@@ -237,17 +125,68 @@ public class EditLevelScreen extends NavigableScreen implements IModelUpdated {
         getGridView().setLevel(level);
     }
 
-    public void setTimer(Timer timer) {
-        this.timer = timer;
-    }
+    public EditLevelToolBar getEditLevelToolBar() {
+        if (!(getNavigationBar() instanceof EditLevelToolBar)) {
 
-    public void suspend() {
-        if (timer != null) {
-            timer.cancel();
-            timer = null;
+            EditLevelToolBar editLevelToolBar = new EditLevelToolBar(app);
+            editLevelToolBar.setPreferredSize(new Dimension(Application.WINDOW_WIDTH, NAV_BAR_HEIGHT));
+            editLevelToolBar.setMinimumSize(new Dimension(Application.WINDOW_WIDTH, NAV_BAR_HEIGHT));
+            editLevelToolBar.setMaximumSize(new Dimension(Application.WINDOW_WIDTH, NAV_BAR_HEIGHT));
+
+            editLevelToolBar.setBounds(NAV_BAR_BOUNDS);
+
+            setNavigationBar(editLevelToolBar);
         }
+
+        return (EditLevelToolBar) getNavigationBar();
     }
 
-    public void resume() {
+    public LevelPreferencePanel getLevelPreferencePanel() {
+
+        if (levelPreferencePanel == null) {
+            levelPreferencePanel = new LevelPreferencePanel(this);
+
+            levelPreferencePanel.setPreferredSize(PREFERENCE_PANEL_SIZE);
+            levelPreferencePanel.setMinimumSize(PREFERENCE_PANEL_SIZE);
+            levelPreferencePanel.setMaximumSize(PREFERENCE_PANEL_SIZE);
+
+            levelPreferencePanel.setBounds(PREFERENCE_PANEL_BOUNDS);
+
+            JScrollPane scrollPane = new JScrollPane(levelPreferencePanel);
+            scrollPane.setBounds(PREFERENCE_SCROLL_PANE_BOUNDS);
+            scrollPane.setHorizontalScrollBarPolicy(JScrollPane.HORIZONTAL_SCROLLBAR_NEVER);
+            scrollPane.setVerticalScrollBarPolicy(JScrollPane.VERTICAL_SCROLLBAR_ALWAYS);
+            scrollPane.setBorder(BorderFactory.createMatteBorder(0, 0, 0, 1, BORDER_COLOR_DARK));
+
+            layeredPane.add(scrollPane, Utilities.BOTTOM_LAYER);
+        }
+
+        return levelPreferencePanel;
+    }
+
+    @Override
+    public void modelChanged() {
+        getLevelPreferencePanel().modelChanged();
+        getGridView().modelChanged();
+    }
+
+    public StyledButton getActiveView() {
+        return activeView;
+    }
+
+    public void setActiveView(StyledButton activeView) {
+        this.activeView = activeView;
+    }
+
+    public JLayeredPane getLayeredPane() {
+        return layeredPane;
+    }
+
+    public int getLevelId() {
+        return levelId;
+    }
+
+    public void setLevelId(int levelId) {
+        this.levelId = levelId;
     }
 }

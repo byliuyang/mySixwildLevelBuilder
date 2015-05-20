@@ -3,6 +3,7 @@ package application.Views.Screens.LevelScreenPackage;
 import application.Models.Levels.Level;
 import application.Views.Components.FlipPagePanel;
 import application.Views.Components.ListPanel;
+import application.Views.IModelUpdated;
 import application.Views.Screens.FlipPageScreen;
 
 import java.util.ArrayList;
@@ -10,7 +11,7 @@ import java.util.ArrayList;
 /**
  * Created by harryliu on 5/3/15.
  */
-public class LevelFlipPagePanel extends FlipPagePanel {
+public class LevelFlipPagePanel extends FlipPagePanel{
 
     ArrayList<Level> levels;
 
@@ -26,6 +27,16 @@ public class LevelFlipPagePanel extends FlipPagePanel {
         add(getLevelListPanel());
     }
 
+    @Override
+    public void initialize() {
+        super.initialize();
+
+        getLevelListPanel().setUpViews();
+        getLevelListPanel().showViews();
+
+        getLevelListPanel().activeFirstLevel();
+    }
+
     public LevelListPanel getLevelListPanel() {
         if (getListPanel() == null) {
 
@@ -37,5 +48,11 @@ public class LevelFlipPagePanel extends FlipPagePanel {
 
     public ArrayList<Level> getLevels() {
         return levels;
+    }
+
+    public void setLevels(ArrayList<Level> levels) {
+        this.levels = levels;
+
+        getLevelListPanel().setLevels(levels);
     }
 }

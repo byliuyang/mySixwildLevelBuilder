@@ -1,10 +1,9 @@
 package application.Views.Screens.EditLevelScreenPackage;
 
-import application.Controllers.ButtonController;
+import application.Controllers.EditLevelScreen.GridMap.SquareViewController;
 import application.Models.Grid;
 import application.Models.Levels.Level;
 import application.Models.Square;
-import application.Moves.ISpecialMove;
 import application.Views.Application;
 import application.Views.Components.NavigationBar;
 import application.Views.IModelUpdated;
@@ -14,7 +13,6 @@ import application.Views.TransitableView;
 import javax.swing.*;
 import java.awt.*;
 import java.util.ArrayList;
-import java.util.Iterator;
 
 /**
  *
@@ -27,19 +25,19 @@ public class GridView extends TransitableView implements IModelUpdated {
     final int GRID_VIEW_PADDING_LEFT = 9;
     final int GRID_VIEW_PADDING_TOP = 9;
 
-    final Color SQUARE_NORMAL_BACK_COLOR = new Color(245, 243, 243);
-    final Color SQUARE_HOVERED_BACK_COLOR = new Color(250, 212, 0);
-    final Color SQUARE_DISABLED_BACK_COLOR = new Color(165, 165, 165);
+    public static final Color SQUARE_NORMAL_BACK_COLOR = new Color(245, 243, 243);
+    public static final Color SQUARE_HOVERED_BACK_COLOR = new Color(250, 212, 0);
+    public static final Color SQUARE_DISABLED_BACK_COLOR = new Color(165, 165, 165);
 
     ArrayList<SquareView> activeSquareViews;
     SquareView[][] squareViews;
     Application app;
 
-    Grid grid;
     Level level;
 
+    EditLevelScreen editLevelScreen;
+
     public GridView(Application app, Level level) {
-        this.grid = level.getGrid();
         this.app = app;
         this.level = level;
 
@@ -51,19 +49,22 @@ public class GridView extends TransitableView implements IModelUpdated {
         setBorder(BorderFactory.createLineBorder(Screen.BORDER_COLOR));
 
         setLayout(null);
-    }
 
-    public void initialize() {
-
-        removeAll();
         activeSquareViews = new ArrayList<SquareView>();
         squareViews = new SquareView[Grid.MAX_ROWS][Grid.MAX_COLUMNS];
+    }
+
+    public void initialize(EditLevelScreen editLevelScreen) {
+
+        this.editLevelScreen = editLevelScreen;
+
+        removeAll();
 
         for (int row = 0; row < 9; row++) {
             for (int column = 0; column < 9; column++) {
 
+                Square square = level.getGrid().getSquare(row, column);
 
-                Square square = grid.getSquare(row, column);
                 if (square != null) {
 
                     SquareView squareView = new SquareView(
@@ -90,9 +91,9 @@ public class GridView extends TransitableView implements IModelUpdated {
 
                     add(squareView);
 
-                    ButtonController squareButtonController = new ButtonController(squareView);
-                    squareView.addMouseListener(squareButtonController);
-                    squareView.addMouseMotionListener(squareButtonController);
+                    SquareViewController squareViewController = new SquareViewController(squareView, editLevelScreen);
+                    squareView.addMouseListener(squareViewController);
+                    squareView.addMouseMotionListener(squareViewController);
 
                     squareView.normal();
                 }
@@ -100,77 +101,20 @@ public class GridView extends TransitableView implements IModelUpdated {
         }
     }
 
-    public void addActiveSquareView(SquareView squareView) {
-        activeSquareViews.add(squareView);
-        grid.addActiveSquare(squareView.getSquare());
-    }
-
-    public void beginMakeingMove() {
-        activeSquareViews.clear();
-        level.beginMakeingMove();
-    }
-
-    public void finishMakingMove() {
-        level.finishMakingMove();
-        for (Iterator<SquareView> squareViewIterator = activeSquareViews.iterator(); squareViewIterator.hasNext(); ) {
-
-            SquareView squareView = squareViewIterator.next();
-
-            squareView.inactive();
-            squareView.normal();
-        }
-
-        activeSquareViews.clear();
-
-        grid.getActiveSquare().clear();
-
-        if (level.hasWon()) {
-            app.getGameScreen().levelCompleted();
-        }
-    }
-
-    public boolean isMakeingMove() {
-        return level.isMakeingMove();
-    }
-
-    public boolean hasSpecialMove() {
-        return level.hasSpecialMove();
-    }
-
-    public ISpecialMove getSpecialMove() {
-        return level.getSpecialMove();
-    }
-
-    public void setSpecialMove(ISpecialMove specialMove) {
-        level.setSpecialMove(specialMove);
-    }
-
     public Grid getGrid() {
-        return grid;
-    }
-
-    public SquareView[][] getSquareViews() {
-        return squareViews;
+        return level.getGrid();
     }
 
     @Override
     public void modelChanged() {
-        for (int row = 0; row < 9; row++) {
-            for (int column = 0; column < 9; column++) {
-
-                if (squareViews[row][column] != null) {
-                    squareViews[row][column].repaint();
-                }
-            }
-        }
-    }
-
-    public ArrayList<SquareView> getActiveSquareViews() {
-        return activeSquareViews;
+        initialize(editLevelScreen);
     }
 
     public void setLevel(Level level) {
         this.level = level;
-        this.grid = level.getGrid();
+    }
+
+    public SquareView[][] getSquareViews() {
+        return squareViews;
     }
 }

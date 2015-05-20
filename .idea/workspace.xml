@@ -1,7 +1,82 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8dd9106e-fdd5-4b03-bf35-4942ddab8537" name="Default" comment="" />
+    <list default="true" id="8dd9106e-fdd5-4b03-bf35-4942ddab8537" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/application/Controllers/EditLevelScreen/SpecialMovePreference/ChangeClearTileSpecialMoveLimitController.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/application/Controllers/EditLevelScreen/BasicsPreference/ChangeLevelTypeController.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/application/Controllers/EditLevelScreen/MultiplierPreference/ChangeMultiplierOneProbabilityController.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/application/Controllers/EditLevelScreen/MultiplierPreference/ChangeMultiplierThreeProbabilityController.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/application/Controllers/EditLevelScreen/MultiplierPreference/ChangeMultiplierTwoProbabilityController.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/application/Controllers/EditLevelScreen/BasicsPreference/ChangeNumberLimitController.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/application/Controllers/EditLevelScreen/StarMilestonePreference/ChangeOneStarMilestoneController.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/application/Controllers/EditLevelScreen/ChangePreferenceController.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/application/Controllers/EditLevelScreen/SpecialMovePreference/ChangeResetBoardSpecialMoveLimitController.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/application/Controllers/EditLevelScreen/SpecialMovePreference/ChangeSwapSquareSpecialMoveLimitController.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/application/Controllers/EditLevelScreen/StarMilestonePreference/ChangeThreeStarMilestoneController.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/application/Controllers/EditLevelScreen/TileProbabilitiesPreference/ChangeTileFiveProbabilityController.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/application/Controllers/EditLevelScreen/TileProbabilitiesPreference/ChangeTileFourProbabilityController.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/application/Controllers/EditLevelScreen/TileProbabilitiesPreference/ChangeTileOneProbabilityController.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/application/Controllers/EditLevelScreen/TileProbabilitiesPreference/ChangeTileSixProbabilityController.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/application/Controllers/EditLevelScreen/TileProbabilitiesPreference/ChangeTileThreeProbabilityController.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/application/Controllers/EditLevelScreen/TileProbabilitiesPreference/ChangeTileTwoProbabilityController.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/application/Controllers/EditLevelScreen/StarMilestonePreference/ChangeTwoStarMilestoneController.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/application/Controllers/ViewLevelScreen/DeleteLevelButtonController.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/application/Controllers/EditLevelScreen/GridMap/EditLevelScreenController.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/application/Views/Components/EditLevelToolBar.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/application/Controllers/ViewLevelScreen/FinishEditingLevelController.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/application/Views/Screens/EditLevelScreenPackage/LevelPreferencePanels/LevelBasicsPanel.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/application/Views/Screens/EditLevelScreenPackage/LevelPreferencePanels/LevelPreferencePanel.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/application/Views/Screens/EditLevelScreenPackage/LevelPreferencePanels/LevelSpecialMovePanel.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/application/Contracts/LevelTypeContract.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/application/Views/Screens/EditLevelScreenPackage/LevelPreferencePanels/MultiplierProbabilityPanel.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/application/Controllers/EditLevelScreen/GridMap/SelectGridElementController.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/application/Views/Screens/EditLevelScreenPackage/LevelPreferencePanels/SelectGridElementsPanel.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/application/Views/Screens/EditLevelScreenPackage/LevelPreferencePanels/SelectMultiplierPanel.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/application/Views/Screens/LevelScreenPackage/SmallSquareView.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/application/Controllers/EditLevelScreen/GridMap/SquareViewController.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/application/Views/Screens/EditLevelScreenPackage/LevelPreferencePanels/StarMilestonePanel.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/application/Views/Screens/EditLevelScreenPackage/LevelPreferencePanels/TileProbabilityPanel.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/AvenirNextBold.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/AvenirNextIt.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/refreshButton.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/levels/2.level" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/levels/3.level" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/levels/4.level" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/application/Controllers/GameScreen/ClearBadgeButtonController.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/application/Controllers/GameScreen/LevelButtonController.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/application/Views/Components/ScoreProgressBar.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/application/Views/Components/ScoreProgressView.java" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/application/Controllers/ViewLevelScreen/StartLevelButtonController.java" afterPath="$PROJECT_DIR$/src/application/Controllers/ViewLevelScreen/EditLevelButtonController.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/application/Views/Screens/GameScreenPackage/GameScreen.java" afterPath="$PROJECT_DIR$/src/application/Views/Screens/EditLevelScreenPackage/EditLevelScreen.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/application/Views/Screens/GameScreenPackage/GridView.java" afterPath="$PROJECT_DIR$/src/application/Views/Screens/EditLevelScreenPackage/GridView.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/application/Views/Screens/GameScreenPackage/SquareView.java" afterPath="$PROJECT_DIR$/src/application/Views/Screens/EditLevelScreenPackage/SquareView.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/application/Views/Screens/GameScreenPackage/TileView.java" afterPath="$PROJECT_DIR$/src/application/Views/Screens/EditLevelScreenPackage/TileView.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/levels/1.level" afterPath="$PROJECT_DIR$/levels/1.level" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/deleteLevelButton.png" afterPath="$PROJECT_DIR$/assets/deleteLevelButton.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/removeTailSpecialMoveButton.png" afterPath="$PROJECT_DIR$/assets/removeTailSpecialMoveButton.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/resetBoardSpecialMoveButton.png" afterPath="$PROJECT_DIR$/assets/resetBoardSpecialMoveButton.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/swapSquareSpecialMoveButton.png" afterPath="$PROJECT_DIR$/assets/swapSquareSpecialMoveButton.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/application/Controllers/ViewLevelScreen/AddNewLevelButtonController.java" afterPath="$PROJECT_DIR$/src/application/Controllers/ViewLevelScreen/AddNewLevelButtonController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/application/Views/Components/AddNewLevelToolBar.java" afterPath="$PROJECT_DIR$/src/application/Views/Components/AddNewLevelToolBar.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/application/Views/Application.java" afterPath="$PROJECT_DIR$/src/application/Views/Application.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/application/Controllers/NavigationBar/GoBackButtonController.java" afterPath="$PROJECT_DIR$/src/application/Controllers/NavigationBar/GoBackButtonController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/application/Models/Grid.java" afterPath="$PROJECT_DIR$/src/application/Models/Grid.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/application/Contracts/ImageContract.java" afterPath="$PROJECT_DIR$/src/application/Contracts/ImageContract.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/application/Views/Screens/LevelScreenPackage/LevelDetailPanel.java" afterPath="$PROJECT_DIR$/src/application/Views/Screens/LevelScreenPackage/LevelDetailPanel.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/application/Views/Screens/LevelScreenPackage/LevelFlipPagePanel.java" afterPath="$PROJECT_DIR$/src/application/Views/Screens/LevelScreenPackage/LevelFlipPagePanel.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/application/Views/Screens/LevelScreenPackage/LevelListPanel.java" afterPath="$PROJECT_DIR$/src/application/Views/Screens/LevelScreenPackage/LevelListPanel.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/application/Views/Screens/LevelScreenPackage/LevelsScreen.java" afterPath="$PROJECT_DIR$/src/application/Views/Screens/LevelScreenPackage/LevelsScreen.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/application/Controllers/FlipScreen/LockableButtonController.java" afterPath="$PROJECT_DIR$/src/application/Controllers/FlipScreen/LockableButtonController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/application/Views/Components/NavigableBackToolBar.java" afterPath="$PROJECT_DIR$/src/application/Views/Components/NavigableBackToolBar.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/application/Views/Screens/LevelScreenPackage/PreviewGridView.java" afterPath="$PROJECT_DIR$/src/application/Views/Screens/LevelScreenPackage/PreviewGridView.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/application/Models/SpecialMoveLeft.java" afterPath="$PROJECT_DIR$/src/application/Models/SpecialMoveLeft.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/application/Views/Components/StyledButton.java" afterPath="$PROJECT_DIR$/src/application/Views/Components/StyledButton.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/application/Contracts/TextContact.java" afterPath="$PROJECT_DIR$/src/application/Contracts/TextContact.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/application/Contracts/TipContract.java" afterPath="$PROJECT_DIR$/src/application/Contracts/TipContract.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/application/Utilities.java" afterPath="$PROJECT_DIR$/src/application/Utilities.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
     <ignored path="SixesWildLevelBuilder.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/out/" />
@@ -23,24 +98,38 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="TextContact.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/application/Contracts/TextContact.java">
+      <file leaf-file-name="EditLevelToolBar.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/application/Views/Components/EditLevelToolBar.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="52" column="64" selection-start-line="52" selection-start-column="64" selection-end-line="52" selection-end-column="64" />
+            <state vertical-scroll-proportion="0.3409091">
+              <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="NavigableBackToolBar.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/application/Views/Components/NavigableBackToolBar.java">
+      <file leaf-file-name="FinishEditingLevelController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/application/Controllers/ViewLevelScreen/FinishEditingLevelController.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+              <caret line="20" column="70" selection-start-line="20" selection-start-column="70" selection-end-line="20" selection-end-column="70" />
               <folding>
-                <element signature="e#763#764#0" expanded="true" />
-                <element signature="e#789#790#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#469#470#0" expanded="true" />
+                <element signature="e#503#504#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GoBackButtonController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/application/Controllers/NavigationBar/GoBackButtonController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="13" column="14" selection-start-line="13" selection-start-column="14" selection-end-line="13" selection-end-column="14" />
+              <folding>
+                <element signature="e#513#514#0" expanded="true" />
+                <element signature="e#564#565#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -50,30 +139,66 @@
         <entry file="file://$PROJECT_DIR$/src/application/Views/Screens/LevelScreenPackage/LevelsScreen.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="39" column="75" selection-start-line="39" selection-start-column="75" selection-end-line="39" selection-end-column="75" />
+              <caret line="130" column="5" selection-start-line="130" selection-start-column="5" selection-end-line="130" selection-end-column="5" />
               <folding>
-                <element signature="e#3282#3283#0" expanded="true" />
-                <element signature="e#3317#3318#0" expanded="true" />
+                <element signature="e#4119#4120#0" expanded="true" />
+                <element signature="e#4154#4155#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ImageIO.java" pinned="false" current-in-tab="false">
-        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_25.jdk/Contents/Home/src.zip!/javax/imageio/ImageIO.java">
+      <file leaf-file-name="LevelFlipPagePanel.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/application/Views/Screens/LevelScreenPackage/LevelFlipPagePanel.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="1300" column="0" selection-start-line="1300" selection-start-column="0" selection-end-line="1300" selection-end-column="0" />
+              <caret line="41" column="0" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
+              <folding>
+                <element signature="e#1432#1433#0" expanded="true" />
+                <element signature="e#1461#1462#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PreviewGridView.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/application/Views/Screens/LevelScreenPackage/PreviewGridView.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="23" column="4" selection-start-line="23" selection-start-column="4" selection-end-line="23" selection-end-column="69" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ImageButton.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/application/Views/Components/ImageButton.java">
+      <file leaf-file-name="FlipPagePanel.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/application/Views/Components/FlipPagePanel.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="55" column="0" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
+              <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LevelListPanel.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/application/Views/Screens/LevelScreenPackage/LevelListPanel.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="37" column="92" selection-start-line="37" selection-start-column="92" selection-end-line="37" selection-end-column="92" />
+              <folding>
+                <element signature="e#1681#1682#0" expanded="true" />
+                <element signature="e#1717#1718#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MultiplierProbabilityPanel.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/application/Views/Screens/EditLevelScreenPackage/LevelPreferencePanels/MultiplierProbabilityPanel.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="252" column="41" selection-start-line="252" selection-start-column="41" selection-end-line="252" selection-end-column="41" />
               <folding />
             </state>
           </provider>
@@ -83,52 +208,7 @@
         <entry file="file://$PROJECT_DIR$/src/application/Views/Components/AddNewLevelToolBar.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="17" column="81" selection-start-line="17" selection-start-column="81" selection-end-line="17" selection-end-column="81" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TipContract.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/application/Contracts/TipContract.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="13" column="74" selection-start-line="13" selection-start-column="74" selection-end-line="13" selection-end-column="74" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AddNewLevelButtonController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/application/Controllers/ViewLevelScreen/AddNewLevelButtonController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="9" column="61" selection-start-line="9" selection-start-column="61" selection-end-line="9" selection-end-column="61" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#350#351#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LevelDetailPanel.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/application/Views/Screens/LevelScreenPackage/LevelDetailPanel.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.052910052">
-              <caret line="103" column="8" selection-start-line="103" selection-start-column="8" selection-end-line="103" selection-end-column="8" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ImageContract.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/application/Contracts/ImageContract.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="50" column="98" selection-start-line="50" selection-start-column="98" selection-end-line="50" selection-end-column="98" />
+              <caret line="33" column="124" selection-start-line="33" selection-start-column="124" selection-end-line="33" selection-end-column="124" />
               <folding />
             </state>
           </provider>
@@ -143,6 +223,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="GradleLocalSettings">
     <option name="externalProjectsViewState">
       <projects_view />
@@ -151,47 +234,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/LevelBuilder/Moves/AutoMoves/DropDownAutoMove.java" />
-        <option value="$PROJECT_DIR$/src/LevelBuilder/Moves/RestartLevelMove.java" />
-        <option value="$PROJECT_DIR$/src/LevelBuilder/Controllers/LevelEditorScreen.java" />
-        <option value="$PROJECT_DIR$/src/LevelBuilder/Views/LevelScreenPackage/LevelFlipPagePanel.java" />
-        <option value="$PROJECT_DIR$/src/LevelBuilder/LevelScreenPackage/LevelFlipPagePanel.java" />
-        <option value="$PROJECT_DIR$/src/SixesWild/Views/Screens/LevelScreenPackage/PreviewGridView.java" />
-        <option value="$PROJECT_DIR$/src/LevelBuilder/Views/Screens/LevelScreenPackage/PreviewGridView.java" />
-        <option value="$PROJECT_DIR$/src/LevelBuilder/Models/Levels/Level.java" />
-        <option value="$PROJECT_DIR$/src/LevelBuilder/Moves/ISpecialMove.java" />
-        <option value="$PROJECT_DIR$/src/LevelBuilder/Moves/IMove.java" />
-        <option value="$PROJECT_DIR$/src/LevelBuilder/Controllers/NavigationBar/GoBackButtonController.java" />
-        <option value="$PROJECT_DIR$/src/LevelBuilder/Views/Screens/GameScreenPackage/GridView.java" />
-        <option value="$PROJECT_DIR$/src/LevelBuilder/Views/Screens/LevelScreenPackage/LevelView.java" />
-        <option value="$PROJECT_DIR$/src/LevelBuilder/Views/Components/SpecialMoveNavigationBar.java" />
-        <option value="$PROJECT_DIR$/src/LevelBuilder/Views/Screens/GameScreenPackage/GameScreen.java" />
-        <option value="$PROJECT_DIR$/src/LevelBuilder/Views/Screens/LevelScreenPackage/LevelListPanel.java" />
-        <option value="$PROJECT_DIR$/src/LevelBuilder/Views/Components/NavigableBackToolBar.java" />
-        <option value="$PROJECT_DIR$/src/LevelBuilder/Views/Components/NavigationBar.java" />
-        <option value="$PROJECT_DIR$/src/LevelBuilder/Views/Application.java" />
-        <option value="$PROJECT_DIR$/src/LevelBuilder/Contracts/TextContact.java" />
-        <option value="$PROJECT_DIR$/src/LevelBuilder/Views/Screens/LevelScreenPackage/LevelsScreen.java" />
-        <option value="$PROJECT_DIR$/src/Models/Levels/PuzzleLevel.java" />
-        <option value="$PROJECT_DIR$/src/SixesWild/Models/Levels/PuzzleLevel.java" />
-        <option value="$PROJECT_DIR$/src/main/Models/Levels/PuzzleLevel.java" />
-        <option value="$PROJECT_DIR$/src/Main/Models/Levels/PuzzleLevel.java" />
-        <option value="$PROJECT_DIR$/src/Main/Models/Levels/Level.java" />
-        <option value="$PROJECT_DIR$/src/app/Models/Levels/Level.java" />
-        <option value="$PROJECT_DIR$/src/Utilities.java" />
-        <option value="$PROJECT_DIR$/src/application/Utilities.java" />
+        <option value="$PROJECT_DIR$/src/application/Controllers/EditLevelScreen/ChangeThreeStarMilestoneController.java" />
+        <option value="$PROJECT_DIR$/src/application/Controllers/EditLevelScreen/StarMilestonePreference/ChangeThreeStarMilestoneController.java" />
+        <option value="$PROJECT_DIR$/src/application/Controllers/EditLevelScreen/StarMilestonePreference/ChangeOneStarMilestoneController.java" />
+        <option value="$PROJECT_DIR$/src/application/Controllers/EditLevelScreen/ChangePreferenceController.java" />
+        <option value="$PROJECT_DIR$/src/application/Views/Screens/EditLevelScreenPackage/LevelPreferencePanels/LevelBasicsPanel.java" />
+        <option value="$PROJECT_DIR$/src/application/Controllers/EditLevelScreen/BasicsPreference/ChangeNumberLimitController.java" />
+        <option value="$PROJECT_DIR$/src/application/Views/Screens/EditLevelScreenPackage/LevelPreferencePanels/StarMilestonePanel.java" />
+        <option value="$PROJECT_DIR$/src/application/Views/Screens/EditLevelScreenPackage/LevelPreferencePanels/LevelSpecialMovePanel.java" />
+        <option value="$PROJECT_DIR$/src/application/Controllers/EditLevelScreen/TileProbabilitiesPreference/ChangeTileOneProbabilityController.java" />
+        <option value="$PROJECT_DIR$/src/application/Controllers/EditLevelScreen/TileProbabilitiesPreference/ChangeTileTwoProbabilityController.java" />
+        <option value="$PROJECT_DIR$/src/application/Controllers/EditLevelScreen/TileProbabilitiesPreference/ChangeTileThreeProbabilityController.java" />
+        <option value="$PROJECT_DIR$/src/application/Controllers/EditLevelScreen/TileProbabilitiesPreference/ChangeTileSixProbabilityController.java" />
+        <option value="$PROJECT_DIR$/src/application/Controllers/EditLevelScreen/TileProbabilitiesPreference/ChangeTileFourProbabilityController.java" />
+        <option value="$PROJECT_DIR$/src/application/Controllers/EditLevelScreen/TileProbabilitiesPreference/ChangeTileFiveProbabilityController.java" />
+        <option value="$PROJECT_DIR$/src/application/Views/Screens/EditLevelScreenPackage/LevelPreferencePanels/TileProbabilityPanel.java" />
+        <option value="$PROJECT_DIR$/src/application/Controllers/EditLevelScreen/MultiplierPreference/ChangeTileOneProbabilityController.java" />
+        <option value="$PROJECT_DIR$/src/application/Controllers/EditLevelScreen/MultiplierPreference/ChangeMultiplierTwoProbabilityController.java" />
+        <option value="$PROJECT_DIR$/src/application/Controllers/EditLevelScreen/MultiplierPreference/ChangeMultiplierThreeProbabilityController.java" />
+        <option value="$PROJECT_DIR$/src/application/Controllers/EditLevelScreen/MultiplierPreference/ChangeMultiplierOneProbabilityController.java" />
+        <option value="$PROJECT_DIR$/src/application/Views/Screens/EditLevelScreenPackage/LevelPreferencePanels/LevelPreferencePanel.java" />
+        <option value="$PROJECT_DIR$/src/application/Controllers/EditLevelScreen/GridMap/GridElementController.java" />
+        <option value="$PROJECT_DIR$/src/application/Controllers/EditLevelScreen/GridMap/EditLevelScreenController.java" />
+        <option value="$PROJECT_DIR$/src/application/Controllers/EditLevelScreen/GridMap/GridViewController.java" />
+        <option value="$PROJECT_DIR$/src/application/Models/Grid.java" />
         <option value="$PROJECT_DIR$/src/application/Models/Levels/Level.java" />
-        <option value="$PROJECT_DIR$/src/application/Models/Levels/LightningLevel.java" />
-        <option value="$PROJECT_DIR$/src/application/Models/Levels/EliminationLevel.java" />
-        <option value="$PROJECT_DIR$/src/application/Models/Levels/ReleaseLevel.java" />
-        <option value="$PROJECT_DIR$/src/application/Views/Screens/LevelScreenPackage/LevelListPanel.java" />
-        <option value="$PROJECT_DIR$/src/application/Views/Screens/LevelScreenPackage/LevelsScreen.java" />
-        <option value="$PROJECT_DIR$/src/application/Controllers/ViewLevelScreen/AddNewLevelButtonController.java" />
-        <option value="$PROJECT_DIR$/src/application/Contracts/TipContract.java" />
-        <option value="$PROJECT_DIR$/src/application/Contracts/TextContact.java" />
+        <option value="$PROJECT_DIR$/src/application/Models/Square.java" />
+        <option value="$PROJECT_DIR$/src/application/Views/Components/StyledButton.java" />
+        <option value="$PROJECT_DIR$/src/application/Controllers/EditLevelScreen/GridMap/SelectGridElementController.java" />
+        <option value="$PROJECT_DIR$/src/application/Views/Screens/EditLevelScreenPackage/LevelPreferencePanels/SelectGridElementsPanel.java" />
+        <option value="$PROJECT_DIR$/src/application/Views/Screens/EditLevelScreenPackage/SquareView.java" />
+        <option value="$PROJECT_DIR$/src/application/Views/Screens/EditLevelScreenPackage/GridView.java" />
+        <option value="$PROJECT_DIR$/src/application/Controllers/EditLevelScreen/GridMap/SelectMultiplierController.java" />
+        <option value="$PROJECT_DIR$/src/application/Views/Screens/LevelScreenPackage/SmallSquareView.java" />
+        <option value="$PROJECT_DIR$/src/application/Views/Screens/EditLevelScreenPackage/LevelPreferencePanels/SelectMultiplierPanel.java" />
+        <option value="$PROJECT_DIR$/src/application/Controllers/EditLevelScreen/GridMap/SquareViewController.java" />
+        <option value="/Library/Java/JavaVirtualMachines/jdk1.8.0_25.jdk/Contents/Home/src.zip!/java/io/ObjectInputStream.java" />
+        <option value="$PROJECT_DIR$/src/application/Contracts/LevelTypeContract.java" />
+        <option value="$PROJECT_DIR$/src/application/Controllers/EditLevelScreen/BasicsPreference/ChangeLevelTypeController.java" />
+        <option value="$PROJECT_DIR$/src/application/Views/Application.java" />
         <option value="$PROJECT_DIR$/src/application/Views/Components/AddNewLevelToolBar.java" />
-        <option value="$PROJECT_DIR$/src/application/Contracts/ImageContract.java" />
-        <option value="$PROJECT_DIR$/src/application/Views/Screens/LevelScreenPackage/LevelDetailPanel.java" />
+        <option value="$PROJECT_DIR$/src/application/Controllers/ViewLevelScreen/AddNewLevelButtonController.java" />
+        <option value="$PROJECT_DIR$/src/application/Utilities.java" />
+        <option value="$PROJECT_DIR$/src/application/Controllers/NavigationBar/GoBackButtonController.java" />
+        <option value="$PROJECT_DIR$/src/application/Views/Screens/EditLevelScreenPackage/EditLevelScreen.java" />
+        <option value="$PROJECT_DIR$/src/application/Controllers/ViewLevelScreen/FinishEditingLevelController.java" />
+        <option value="$PROJECT_DIR$/src/application/Views/Screens/LevelScreenPackage/LevelsScreen.java" />
+        <option value="$PROJECT_DIR$/src/application/Views/Screens/LevelScreenPackage/LevelListPanel.java" />
+        <option value="$PROJECT_DIR$/src/application/Views/Screens/LevelScreenPackage/LevelFlipPagePanel.java" />
+        <option value="$PROJECT_DIR$/src/application/Views/Screens/LevelScreenPackage/PreviewGridView.java" />
+        <option value="$PROJECT_DIR$/src/application/Views/Screens/EditLevelScreenPackage/LevelPreferencePanels/MultiplierProbabilityPanel.java" />
+        <option value="$PROJECT_DIR$/src/application/Views/Components/EditLevelToolBar.java" />
       </list>
     </option>
   </component>
@@ -210,18 +303,19 @@
     <order />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="y" value="23" />
+    <option name="x" value="37" />
+    <option name="y" value="40" />
     <option name="width" value="1680" />
     <option name="height" value="956" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
     <OptionsSetting value="true" id="Remove" />
     <OptionsSetting value="true" id="Checkout" />
     <OptionsSetting value="true" id="Update" />
     <OptionsSetting value="true" id="Status" />
     <OptionsSetting value="true" id="Edit" />
-    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="2" id="Add" />
     <ConfirmationsSetting value="0" id="Remove" />
   </component>
   <component name="ProjectView">
@@ -237,6 +331,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -373,6 +468,70 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="Screens" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="EditLevelScreenPackage" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SixesWildLevelBuilder" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SixesWildLevelBuilder" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="application" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Screens" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="EditLevelScreenPackage" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="LevelPreferencePanels" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SixesWildLevelBuilder" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SixesWildLevelBuilder" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="application" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="Components" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -395,7 +554,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Moves" />
+              <option name="myItemId" value="Models" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -418,6 +577,10 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Models" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Levels" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -487,6 +650,32 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="Controllers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="NavigationBar" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SixesWildLevelBuilder" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SixesWildLevelBuilder" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="application" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="Contracts" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -494,7 +683,6 @@
         </subPane>
       </pane>
       <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -507,16 +695,24 @@
     <property name="recentsLimit" value="5" />
     <property name="dynamic.classpath" value="false" />
     <property name="FullScreen" value="false" />
+    <property name="ignore_missing_gitignore" value="true" />
+    <property name="OverrideImplement.combined" value="true" />
+    <property name="OverrideImplement.overriding.sorted" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="application.Controllers.EditLevelScreen.TileProbabilitiesPreference" />
+      <recent name="application.Controllers.EditLevelScreen" />
+      <recent name="application.Views.Screens.LevelScreenPackage" />
+      <recent name="application.Controllers.ViewLevelScreen" />
       <recent name="LevelBuilder.Moves" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/application" />
+      <recent name="$PROJECT_DIR$/src/application/Controllers/EditLevelScreen/MultiplierPreference" />
       <recent name="$PROJECT_DIR$/src" />
       <recent name="$PROJECT_DIR$/src/LevelBuilder" />
       <recent name="$PROJECT_DIR$/src/LevelBuilder/Views" />
-      <recent name="$PROJECT_DIR$" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src" />
@@ -820,15 +1016,30 @@
       <workItem from="1431470209358" duration="1023000" />
       <workItem from="1431471269742" duration="1185000" />
       <workItem from="1431483812819" duration="60000" />
-      <workItem from="1431492458306" duration="3199000" />
+      <workItem from="1431492458306" duration="8520000" />
+      <workItem from="1431569216496" duration="4894000" />
+      <workItem from="1431613285069" duration="10121000" />
+      <workItem from="1431667955586" duration="8255000" />
+      <workItem from="1431721493981" duration="4221000" />
+      <workItem from="1431728957612" duration="77000" />
+      <workItem from="1431746362926" duration="183000" />
+      <workItem from="1431752278077" duration="572000" />
+      <workItem from="1431811171890" duration="61000" />
+      <workItem from="1431814503556" duration="16000" />
+      <workItem from="1431913646864" duration="5093000" />
+      <workItem from="1431931721492" duration="284000" />
+      <workItem from="1431996930326" duration="667000" />
+      <workItem from="1432003844395" duration="24739000" />
+      <workItem from="1432074433376" duration="19000" />
+      <workItem from="1432074469396" duration="10138000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9545000" />
+    <option name="totallyTimeSpent" value="84206000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1680" height="956" extended-state="6" />
+    <frame x="37" y="40" width="1680" height="956" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -849,7 +1060,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32919955" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32356256" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -857,6 +1068,33 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
+    <layout-to-restore>
+      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Floobits" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32356256" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32919955" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+    </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
     <option name="RECENTLY_FILTERED_USER_GROUPS">
@@ -880,395 +1118,287 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/application/Views/Screens/LevelScreenPackage/LevelView.java">
+    <entry file="file://$PROJECT_DIR$/src/application/Controllers/EditLevelScreen/StarMilestonePreference/ChangeOneStarMilestoneController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="8" column="52" selection-start-line="8" selection-start-column="52" selection-end-line="8" selection-end-column="52" />
+          <caret line="12" column="80" selection-start-line="12" selection-start-column="80" selection-end-line="12" selection-end-column="80" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/application/Views/Screens/GameScreenPackage/GridView.java">
+    <entry file="file://$PROJECT_DIR$/src/application/Controllers/EditLevelScreen/StarMilestonePreference/ChangeThreeStarMilestoneController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="92" column="93" selection-start-line="92" selection-start-column="93" selection-end-line="92" selection-end-column="93" />
+          <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/application/Views/Screens/LevelScreenPackage/LevelsScreen.java">
+    <entry file="file://$PROJECT_DIR$/src/application/Controllers/EditLevelScreen/StarMilestonePreference/ChangeTwoStarMilestoneController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="79" column="9" selection-start-line="79" selection-start-column="9" selection-end-line="79" selection-end-column="9" />
+          <caret line="25" column="46" selection-start-line="25" selection-start-column="46" selection-end-line="25" selection-end-column="46" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/application/Views/Components/NavigationBar.java">
+    <entry file="file://$PROJECT_DIR$/src/application/Controllers/EditLevelScreen/BasicsPreference/ChangeNumberLimitController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="21" column="55" selection-start-line="21" selection-start-column="55" selection-end-line="21" selection-end-column="55" />
+          <caret line="16" column="101" selection-start-line="16" selection-start-column="101" selection-end-line="16" selection-end-column="101" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/application/Views/Components/NavigableBackToolBar.java">
+    <entry file="file://$PROJECT_DIR$/src/application/Views/Screens/EditLevelScreenPackage/LevelPreferencePanels/LevelSpecialMovePanel.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="30" column="41" selection-start-line="30" selection-start-column="41" selection-end-line="30" selection-end-column="41" />
+          <caret line="244" column="20" selection-start-line="244" selection-start-column="20" selection-end-line="244" selection-end-column="20" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/application/Views/Application.java">
+    <entry file="file://$PROJECT_DIR$/src/application/Controllers/EditLevelScreen/SpecialMovePreference/ChangeClearTileSpecialMoveLimitController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="25" column="52" selection-start-line="25" selection-start-column="52" selection-end-line="25" selection-end-column="52" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
+          <caret line="18" column="4" selection-start-line="18" selection-start-column="4" selection-end-line="29" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/application/Contracts/TextContact.java">
+    <entry file="file://$PROJECT_DIR$/src/application/Controllers/EditLevelScreen/SpecialMovePreference/ChangeSwapSquareSpecialMoveLimitController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.36713287">
+          <caret line="14" column="4" selection-start-line="14" selection-start-column="4" selection-end-line="29" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/application/Controllers/EditLevelScreen/TileProbabilitiesPreference/ChangeTileSixProbabilityController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.41958043">
+          <caret line="21" column="49" selection-start-line="21" selection-start-column="49" selection-end-line="21" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/application/Controllers/EditLevelScreen/TileProbabilitiesPreference/ChangeTileOneProbabilityController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="20" column="63" selection-start-line="20" selection-start-column="63" selection-end-line="20" selection-end-column="63" />
+          <caret line="23" column="13" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/application/Controllers/EditLevelScreen/TileProbabilitiesPreference/ChangeTileFiveProbabilityController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.39335665">
+          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/application/Controllers/EditLevelScreen/TileProbabilitiesPreference/ChangeTileFourProbabilityController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4458042">
+          <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/application/Controllers/EditLevelScreen/TileProbabilitiesPreference/ChangeTileThreeProbabilityController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.36713287">
+          <caret line="19" column="48" selection-start-line="19" selection-start-column="48" selection-end-line="20" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/application/Controllers/EditLevelScreen/TileProbabilitiesPreference/ChangeTileTwoProbabilityController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.47202796">
+          <caret line="23" column="13" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/application/Views/Screens/EditLevelScreenPackage/LevelPreferencePanels/StarMilestonePanel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.50174826">
+          <caret line="225" column="79" selection-start-line="221" selection-start-column="12" selection-end-line="225" selection-end-column="79" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/application/Controllers/EditLevelScreen/MultiplierPreference/ChangeMultiplierTwoProbabilityController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5769231">
+          <caret line="27" column="83" selection-start-line="27" selection-start-column="54" selection-end-line="27" selection-end-column="83" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/application/Controllers/EditLevelScreen/MultiplierPreference/ChangeMultiplierThreeProbabilityController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5769231">
+          <caret line="27" column="83" selection-start-line="27" selection-start-column="83" selection-end-line="27" selection-end-column="83" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/application/Controllers/EditLevelScreen/MultiplierPreference/ChangeMultiplierOneProbabilityController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5769231">
+          <caret line="27" column="83" selection-start-line="27" selection-start-column="83" selection-end-line="27" selection-end-column="83" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/application/Views/Screens/EditLevelScreenPackage/LevelPreferencePanels/TileProbabilityPanel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="334" column="12" selection-start-line="334" selection-start-column="12" selection-end-line="338" selection-end-column="73" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/application/Views/Screens/EditLevelScreenPackage/LevelPreferencePanels/LevelBasicsPanel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="148" column="79" selection-start-line="148" selection-start-column="79" selection-end-line="148" selection-end-column="79" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/application/Views/Screens/EditLevelScreenPackage/LevelPreferencePanels/LevelPreferencePanel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="190" column="58" selection-start-line="190" selection-start-column="58" selection-end-line="190" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/application/Controllers/EditLevelScreen/ChangePreferenceController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="16" column="48" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/application/Controllers/ButtonController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.41958043">
+          <caret line="22" column="8" selection-start-line="22" selection-start-column="8" selection-end-line="25" selection-end-column="9" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/application/Controllers/NavigationBar/GoBackButtonController.java">
+    <entry file="file://$PROJECT_DIR$/src/application/Models/Square.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="22" column="42" selection-start-line="22" selection-start-column="42" selection-end-line="22" selection-end-column="42" />
+        <state vertical-scroll-proportion="0.8426573">
+          <caret line="63" column="5" selection-start-line="63" selection-start-column="5" selection-end-line="63" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/application/Views/Screens/GameScreenPackage/GameScreen.java">
+    <entry file="file://$PROJECT_DIR$/src/application/Views/Components/StyledButton.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="173" column="32" selection-start-line="173" selection-start-column="32" selection-end-line="173" selection-end-column="32" />
+        <state vertical-scroll-proportion="1.9178321">
+          <caret line="163" column="59" selection-start-line="163" selection-start-column="59" selection-end-line="163" selection-end-column="59" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/application/Views/Screens/LevelScreenPackage/LevelListPanel.java">
+    <entry file="file://$PROJECT_DIR$/src/application/Views/Screens/EditLevelScreenPackage/SquareView.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="23" column="20" selection-start-line="23" selection-start-column="20" selection-end-line="23" selection-end-column="20" />
+          <caret line="166" column="9" selection-start-line="166" selection-start-column="9" selection-end-line="166" selection-end-column="9" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/application/Views/Screens/LevelScreenPackage/LevelView.java">
+    <entry file="file://$PROJECT_DIR$/src/application/Controllers/EditLevelScreen/GridMap/EditLevelScreenController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="8" column="52" selection-start-line="8" selection-start-column="52" selection-end-line="8" selection-end-column="52" />
+          <caret line="21" column="12" selection-start-line="21" selection-start-column="12" selection-end-line="21" selection-end-column="61" />
+          <folding>
+            <element signature="e#435#436#0" expanded="false" />
+            <element signature="e#489#490#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/application/Views/Screens/GameScreenPackage/GridView.java">
+    <entry file="file://$PROJECT_DIR$/src/application/Controllers/EditLevelScreen/GridMap/SelectGridElementController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="92" column="93" selection-start-line="92" selection-start-column="93" selection-end-line="92" selection-end-column="93" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/application/Views/Screens/LevelScreenPackage/LevelsScreen.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="79" column="9" selection-start-line="79" selection-start-column="9" selection-end-line="79" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/application/Views/Components/NavigationBar.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="21" column="55" selection-start-line="21" selection-start-column="55" selection-end-line="21" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/application/Views/Components/NavigableBackToolBar.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="30" column="41" selection-start-line="30" selection-start-column="41" selection-end-line="30" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_25.jdk/Contents/Home/src.zip!/java/awt/Container.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="1002" column="0" selection-start-line="1002" selection-start-column="0" selection-end-line="1002" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_25.jdk/Contents/Home/src.zip!/javax/swing/JFrame.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="563" column="0" selection-start-line="563" selection-start-column="0" selection-end-line="563" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_25.jdk/Contents/Home/src.zip!/javax/swing/JLayeredPane.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="230" column="0" selection-start-line="230" selection-start-column="0" selection-end-line="230" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_25.jdk/Contents/Home/src.zip!/java/awt/Container.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="1002" column="0" selection-start-line="1002" selection-start-column="0" selection-end-line="1002" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_25.jdk/Contents/Home/src.zip!/javax/swing/JFrame.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="563" column="0" selection-start-line="563" selection-start-column="0" selection-end-line="563" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_25.jdk/Contents/Home/src.zip!/javax/swing/JLayeredPane.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="230" column="0" selection-start-line="230" selection-start-column="0" selection-end-line="230" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/application/Views/Screens/LevelScreenPackage/PreviewGridView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/application/Moves/IMove.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="11" column="37" selection-start-line="11" selection-start-column="37" selection-end-line="11" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/application/Controllers/NavigationBar/GoBackButtonController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="22" column="42" selection-start-line="22" selection-start-column="42" selection-end-line="22" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/application/Views/Screens/GameScreenPackage/GridView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="92" column="93" selection-start-line="92" selection-start-column="93" selection-end-line="92" selection-end-column="93" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/application/Views/Screens/LevelScreenPackage/LevelView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="8" column="52" selection-start-line="8" selection-start-column="52" selection-end-line="8" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/application/Views/Screens/GameScreenPackage/GameScreen.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="173" column="32" selection-start-line="173" selection-start-column="32" selection-end-line="173" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/application/Views/Components/NavigationBar.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="21" column="55" selection-start-line="21" selection-start-column="55" selection-end-line="21" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_25.jdk/Contents/Home/src.zip!/java/io/ObjectInputStream.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="625" column="0" selection-start-line="625" selection-start-column="0" selection-end-line="625" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_25.jdk/Contents/Home/src.zip!/java/lang/Class.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="343" column="0" selection-start-line="343" selection-start-column="0" selection-end-line="343" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_25.jdk/Contents/Home/src.zip!/java/lang/ClassLoader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="356" column="0" selection-start-line="356" selection-start-column="0" selection-end-line="356" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_25.jdk/Contents/Home/src.zip!/java/net/URLClassLoader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33333334">
-          <caret line="371" column="0" selection-start-line="371" selection-start-column="0" selection-end-line="371" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/application/Models/Levels/PuzzleLevel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="21" selection-start-line="0" selection-start-column="21" selection-end-line="0" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/application/Views/Application.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="25" column="47" selection-start-line="25" selection-start-column="47" selection-end-line="25" selection-end-column="47" />
+          <caret line="14" column="40" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="40" />
           <folding>
             <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/application/Moves/ISpecialMove.java">
+    <entry file="file://$PROJECT_DIR$/src/application/Views/Screens/EditLevelScreenPackage/LevelPreferencePanels/SelectGridElementsPanel.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="26" selection-start-line="0" selection-start-column="26" selection-end-line="0" selection-end-column="26" />
+          <caret line="171" column="12" selection-start-line="171" selection-start-column="12" selection-end-line="175" selection-end-column="77" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/application/Utilities.java">
+    <entry file="file://$PROJECT_DIR$/src/application/Views/Screens/LevelScreenPackage/SmallSquareView.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="72" column="0" selection-start-line="72" selection-start-column="0" selection-end-line="72" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
+          <caret line="21" column="30" selection-start-line="21" selection-start-column="30" selection-end-line="21" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/application/Views/Screens/EditLevelScreenPackage/GridView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="29" column="30" selection-start-line="29" selection-start-column="30" selection-end-line="29" selection-end-column="56" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/application/Views/Screens/EditLevelScreenPackage/LevelPreferencePanels/SelectMultiplierPanel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="169" column="56" selection-start-line="169" selection-start-column="56" selection-end-line="169" selection-end-column="56" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/application/Models/Levels/Level.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="27" column="29" selection-start-line="27" selection-start-column="29" selection-end-line="27" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/application/Models/Levels/LightningLevel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="19" column="46" selection-start-line="19" selection-start-column="46" selection-end-line="19" selection-end-column="46" />
-          <folding>
-            <element signature="e#185#186#0" expanded="false" />
-            <element signature="e#219#220#0" expanded="false" />
-            <element signature="e#672#673#0" expanded="false" />
-            <element signature="e#710#711#0" expanded="false" />
-            <element signature="e#739#740#0" expanded="false" />
-            <element signature="e#766#767#0" expanded="false" />
-            <element signature="e#804#805#0" expanded="false" />
-            <element signature="e#836#837#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/application/Models/Levels/EliminationLevel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="23" column="41" selection-start-line="23" selection-start-column="41" selection-end-line="23" selection-end-column="41" />
-          <folding>
-            <element signature="e#765#766#0" expanded="false" />
-            <element signature="e#832#833#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/application/Models/Levels/ReleaseLevel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="27" column="23" selection-start-line="27" selection-start-column="23" selection-end-line="27" selection-end-column="23" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#311#312#0" expanded="false" />
-            <element signature="e#345#346#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/application/Views/Screens/LevelScreenPackage/LevelListPanel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="45" column="16" selection-start-line="45" selection-start-column="16" selection-end-line="45" selection-end-column="16" />
+          <caret line="8" column="22" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/application/Views/Components/ImageButton.java">
+    <entry file="file://$PROJECT_DIR$/src/application/Contracts/LevelTypeContract.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="55" column="0" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
+          <caret line="153" column="37" selection-start-line="153" selection-start-column="37" selection-end-line="153" selection-end-column="37" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/application/Views/Components/NavigableBackToolBar.java">
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_25.jdk/Contents/Home/src.zip!/java/io/ObjectInputStream.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-          <folding>
-            <element signature="e#763#764#0" expanded="true" />
-            <element signature="e#789#790#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_25.jdk/Contents/Home/src.zip!/javax/imageio/ImageIO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="1300" column="0" selection-start-line="1300" selection-start-column="0" selection-end-line="1300" selection-end-column="0" />
+        <state vertical-scroll-proportion="46.18007">
+          <caret line="1800" column="0" selection-start-line="1800" selection-start-column="0" selection-end-line="1800" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/application/Views/Screens/LevelScreenPackage/LevelsScreen.java">
+    <entry file="file://$PROJECT_DIR$/src/application/Controllers/EditLevelScreen/GridMap/SquareViewController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="39" column="75" selection-start-line="39" selection-start-column="75" selection-end-line="39" selection-end-column="75" />
-          <folding>
-            <element signature="e#3282#3283#0" expanded="true" />
-            <element signature="e#3317#3318#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/application/Contracts/TipContract.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="13" column="74" selection-start-line="13" selection-start-column="74" selection-end-line="13" selection-end-column="74" />
+          <caret line="70" column="50" selection-start-line="70" selection-start-column="50" selection-end-line="70" selection-end-column="50" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/application/Contracts/TextContact.java">
+    <entry file="file://$PROJECT_DIR$/src/application/Controllers/EditLevelScreen/BasicsPreference/ChangeLevelTypeController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="52" column="64" selection-start-line="52" selection-start-column="64" selection-end-line="52" selection-end-column="64" />
+          <caret line="35" column="115" selection-start-line="35" selection-start-column="115" selection-end-line="35" selection-end-column="115" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/application/Views/Components/AddNewLevelToolBar.java">
+    <entry file="file://$PROJECT_DIR$/src/application/Controllers/ViewLevelScreen/DeleteLevelButtonController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="17" column="81" selection-start-line="17" selection-start-column="81" selection-end-line="17" selection-end-column="81" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/application/Contracts/ImageContract.java">
+    <entry file="file://$PROJECT_DIR$/src/application/Views/Application.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="50" column="98" selection-start-line="50" selection-start-column="98" selection-end-line="50" selection-end-column="98" />
+          <caret line="41" column="0" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1276,18 +1406,122 @@
     <entry file="file://$PROJECT_DIR$/src/application/Controllers/ViewLevelScreen/AddNewLevelButtonController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="9" column="61" selection-start-line="9" selection-start-column="61" selection-end-line="9" selection-end-column="61" />
+          <caret line="23" column="46" selection-start-line="23" selection-start-column="46" selection-end-line="23" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/application/Utilities.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="88" column="37" selection-start-line="88" selection-start-column="23" selection-end-line="88" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/application/Views/Screens/EditLevelScreenPackage/EditLevelScreen.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="72" column="0" selection-start-line="72" selection-start-column="0" selection-end-line="72" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#350#351#0" expanded="true" />
+            <element signature="e#5267#5268#0" expanded="true" />
+            <element signature="e#5305#5306#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/application/Views/Screens/LevelScreenPackage/LevelDetailPanel.java">
+    <entry file="file://$PROJECT_DIR$/src/application/Controllers/NavigationBar/GoBackButtonController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.052910052">
-          <caret line="103" column="8" selection-start-line="103" selection-start-column="8" selection-end-line="103" selection-end-column="8" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="13" column="14" selection-start-line="13" selection-start-column="14" selection-end-line="13" selection-end-column="14" />
+          <folding>
+            <element signature="e#513#514#0" expanded="true" />
+            <element signature="e#564#565#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/application/Controllers/ViewLevelScreen/FinishEditingLevelController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="20" column="70" selection-start-line="20" selection-start-column="70" selection-end-line="20" selection-end-column="70" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#469#470#0" expanded="true" />
+            <element signature="e#503#504#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/application/Views/Components/FlipPagePanel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/application/Views/Screens/LevelScreenPackage/LevelsScreen.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="130" column="5" selection-start-line="130" selection-start-column="5" selection-end-line="130" selection-end-column="5" />
+          <folding>
+            <element signature="e#4119#4120#0" expanded="true" />
+            <element signature="e#4154#4155#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/application/Views/Screens/LevelScreenPackage/LevelFlipPagePanel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="41" column="0" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
+          <folding>
+            <element signature="e#1432#1433#0" expanded="true" />
+            <element signature="e#1461#1462#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/application/Views/Screens/LevelScreenPackage/PreviewGridView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="23" column="4" selection-start-line="23" selection-start-column="4" selection-end-line="23" selection-end-column="69" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/application/Views/Screens/LevelScreenPackage/LevelListPanel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="37" column="92" selection-start-line="37" selection-start-column="92" selection-end-line="37" selection-end-column="92" />
+          <folding>
+            <element signature="e#1681#1682#0" expanded="true" />
+            <element signature="e#1717#1718#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/application/Views/Screens/EditLevelScreenPackage/LevelPreferencePanels/MultiplierProbabilityPanel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="252" column="41" selection-start-line="252" selection-start-column="41" selection-end-line="252" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/application/Views/Components/AddNewLevelToolBar.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="33" column="124" selection-start-line="33" selection-start-column="124" selection-end-line="33" selection-end-column="124" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/application/Views/Components/EditLevelToolBar.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3409091">
+          <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
           <folding />
         </state>
       </provider>

@@ -40,7 +40,7 @@ public class LevelsScreen extends FlipPageScreen {
         getAddNewLevelToolBar().setNavTitle(TextContact.LEVELS_SCREEN_TITLE);
     }
 
-    void setUpLevelList() {
+    public void setUpLevelList() {
 
         levels = new ArrayList<Level>();
 
@@ -84,6 +84,8 @@ public class LevelsScreen extends FlipPageScreen {
 
             getLevelFlipPagePanel().setBounds(FLIP_PAGE_PANEL_BOUNDS);
             add(getLevelFlipPagePanel());
+
+            getLevelFlipPagePanel().setLevels(levels);
             getLevelFlipPagePanel().initialize();
         }
 
@@ -105,10 +107,6 @@ public class LevelsScreen extends FlipPageScreen {
         return levelFlipPagePanel;
     }
 
-    public int getNumberLevels() {
-        return numberLevels;
-    }
-
     public ArrayList<Level> getLevels() {
         return levels;
     }
@@ -125,6 +123,10 @@ public class LevelsScreen extends FlipPageScreen {
             setNavigationBar(addNewLevelToolBar);
         }
 
-        return (AddNewLevelToolBar)getNavigationBar();
+        return (AddNewLevelToolBar) getNavigationBar();
+    }
+
+    public int getNumberLevels() {
+        return numberLevels;
     }
 }

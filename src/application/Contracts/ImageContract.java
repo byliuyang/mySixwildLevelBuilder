@@ -50,6 +50,20 @@ public class ImageContract {
     //    Delete level button image
     public static final String DELETE_LEVEL_BUTTON_IMAGE = ASSETS_PATH + "/deleteLevelButton.png";
 
+    //    Edit level button image
+    public static final String EDIT_LEVEL_BUTTON_IMAGE = ASSETS_PATH + "/editLevelButton.png";
+
+    //    Reset level button image
+    public static final String RESET_LEVEL_BUTTON_IMAGE = ASSETS_PATH + "/resetLevelButton.png";
+    //    Finish editing button image
+    public static final String FINISH_EDITING_BUTTON_IMAGE = ASSETS_PATH + "/finishEditingButton.png";
+
+    //    Special move button images
+    public static final String RESET_BOARD_SPECIAL_MOVE_IMAGE = ASSETS_PATH + "/resetBoardSpecialMoveButton.png";
+    public static final String SWAP_SQUARE_SPECIAL_MOVE_IMAGE = ASSETS_PATH + "/swapSquareSpecialMoveButton.png";
+    public static final String REMOVE_TILE_SPECIAL_MOVE_IMAGE = ASSETS_PATH + "/removeTailSpecialMoveButton.png";
+
+
     static final String BADGES_PATH = "/badges";
     //    Badge image list
     public static final String[] BADGE_IMAGE_LIST = {

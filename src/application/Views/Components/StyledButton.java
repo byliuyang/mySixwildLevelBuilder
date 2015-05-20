@@ -140,4 +140,48 @@ public class StyledButton extends BufferedComponent {
     public boolean isDisableState() {
         return disableState;
     }
+
+    public Color getNormalBackColor() {
+        return normalBackColor;
+    }
+
+    public Color getHoveredBackColor() {
+        return hoveredBackColor;
+    }
+
+    public Color getActivedBackColor() {
+        return activedBackColor;
+    }
+
+    public Color getCurrentBackColor() {
+        return currentBackColor;
+    }
+
+    public int getRoundRadius() {
+        return roundRadius;
+    }
+
+    public void setNormalBackColor(Color normalBackColor) {
+        this.normalBackColor = normalBackColor;
+    }
+
+    public void setHoveredBackColor(Color hoveredBackColor) {
+        this.hoveredBackColor = hoveredBackColor;
+    }
+
+    public void setActivedBackColor(Color activedBackColor) {
+        this.activedBackColor = activedBackColor;
+    }
+
+    public void setDisabledBackColor(Color disabledBackColor) {
+        this.disabledBackColor = disabledBackColor;
+    }
+
+    public void setDisableState(boolean disableState) {
+        this.disableState = disableState;
+    }
+
+    public void setRoundRadius(int roundRadius) {
+        this.roundRadius = roundRadius;
+    }
 }

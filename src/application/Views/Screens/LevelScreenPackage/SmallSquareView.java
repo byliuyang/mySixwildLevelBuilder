@@ -15,11 +15,11 @@ import java.awt.font.GlyphVector;
 public class SmallSquareView extends StyledButton {
 
     //    Tile view size
-    public static final Dimension TILE_VIEW_SIZE = new Dimension(12, 12);
+    public static final Dimension TILE_VIEW_SIZE = new Dimension(20, 20);
     //    Square size
-    public static final Dimension SQUARE_VIEW_SIZE = new Dimension(15, 15);
+    public static final Dimension SQUARE_VIEW_SIZE = new Dimension(26, 26);
     //    Tile font size
-    final float FONT_SIZE = 8L;
+    final float FONT_SIZE = 15L;
     //    Tile background color
     final Color[] TILE_BACK_COLOR = {
             new Color(236, 113, 113),
@@ -30,14 +30,9 @@ public class SmallSquareView extends StyledButton {
             new Color(124, 62, 182)
     };
     //    Rounded arc x
-    final int ROUNDED_ARC_X = 4;
+    final int ROUNDED_ARC_X = 8;
     //    Rounded arc y
-    final int ROUNDED_ARC_Y = 4;
-    //    Six label of container
-    final String SIX = "6";
-
-    //    Font size of SIX
-    final float SIX_FONT_SIZE = 10L;
+    final int ROUNDED_ARC_Y = 8;
 
 
     Square square;
@@ -49,31 +44,6 @@ public class SmallSquareView extends StyledButton {
 
     public void redrawState() {
         super.redrawState();
-
-        if (square.isContainer()) {
-            int containerWidth = (int) getMinimumSize().getWidth();
-            int containerHeight = (int) getMinimumSize().getHeight();
-
-            //  Setup font
-
-            Utilities.normalFont = Utilities.normalFont.deriveFont(SIX_FONT_SIZE);
-
-            Utilities.setHighQuality(graphics2D);
-
-            FontMetrics metrics = graphics2D.getFontMetrics(Utilities.normalFont);
-            int fontWidth = metrics.stringWidth(SIX);
-
-            FontRenderContext renderContext = graphics2D.getFontRenderContext();
-            GlyphVector glyphVector = Utilities.normalFont.createGlyphVector(renderContext, SIX);
-            Rectangle visualBounds = glyphVector.getVisualBounds().getBounds();
-
-            int textPaddingTop = (containerHeight - visualBounds.y) / 2;
-            int textPaddingLeft = (containerWidth - fontWidth) / 2;
-
-            graphics2D.setColor(Color.WHITE);
-            graphics2D.setFont(Utilities.normalFont);
-            graphics2D.drawString(SIX, textPaddingLeft, textPaddingTop);
-        }
 
         if (square.getTile() != null) {
 

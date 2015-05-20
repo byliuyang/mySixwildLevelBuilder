@@ -1,6 +1,7 @@
 package application.Views.Components;
 
 import application.Contracts.ImageContract;
+import application.Contracts.TipContract;
 import application.Controllers.NavigationBar.GoBackButtonController;
 import application.Views.Application;
 
@@ -13,13 +14,13 @@ public class NavigableBackToolBar extends NavigationBar {
 
     //    Button background color
     final Color BUTTON_BACK_COLOR = new Color(112, 147, 113);
-    //  Button actived background color
-    final Color BUTTON_ACTIVE_COLOR = new Color(86, 116, 87);
+    //    Button active background back color
+    final Color BUTTON_ACTIVE_COLOR = new Color(103, 137, 104);
     //    Back button dimension
     final Dimension BACK_BUTTON_SIZE = new Dimension(58, 58);
     //    Back button bounds
     final Rectangle BACK_BUTTON_BOUNDS = new Rectangle(0, 0, 58, 58);
-    //    Navigation bar background color
+
     public NavigableBackToolBar(Application app) {
         super(app);
     }
@@ -41,8 +42,9 @@ public class NavigableBackToolBar extends NavigationBar {
         backButton.setMinimumSize(BACK_BUTTON_SIZE);
 
         backButton.setBounds(BACK_BUTTON_BOUNDS);
-//        backButton.setToolTipText(TipContract.BACK_TO_MAIN_MENU_BUTTON_TIP);
+        backButton.setToolTipText(TipContract.BACK_TO_LEVELS_BUTTON_TIP);
         backButton.addMouseListener(new GoBackButtonController(backButton, app));
+
 
         add(backButton);
 

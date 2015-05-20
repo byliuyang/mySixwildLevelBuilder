@@ -1,10 +1,12 @@
 package application.Controllers.EditLevelScreen.GridMap;
 
 import application.Controllers.ButtonController;
+import application.Utilities;
 import application.Views.Components.StyledButton;
 import application.Views.Screens.EditLevelScreenPackage.EditLevelScreen;
+import application.Views.Screens.EditLevelScreenPackage.SquareView;
 
-import java.awt.event.MouseAdapter;
+import java.awt.*;
 import java.awt.event.MouseEvent;
 
 /**
@@ -13,19 +15,23 @@ import java.awt.event.MouseEvent;
 public class SelectGridElementController extends ButtonController {
 
     EditLevelScreen editLevelScreen;
+    SquareView draggedView;
 
     public SelectGridElementController(StyledButton button, EditLevelScreen editLevelScreen) {
         super(button);
         this.editLevelScreen = editLevelScreen;
+        draggedView = null;
     }
 
     @Override
     public void mousePressed(MouseEvent e) {
-        editLevelScreen.setActiveView(button);
-    }
+        if(editLevelScreen.getActiveView() == null) {
+            button.actived();
 
-    @Override
-    public void mouseReleased(MouseEvent e) {
-        System.out.println("Mouse released");
+            editLevelScreen.setActiveView(button);
+        } else {
+            editLevelScreen.getActiveView().inactive();
+            editLevelScreen.setActiveView(null);
+        }
     }
 }

@@ -11,7 +11,7 @@ import java.awt.event.MouseEvent;
  */
 public class GoBackButtonController extends ButtonController {
 
-    Application app;
+    protected Application app;
 
     public GoBackButtonController(StyledButton button, Application app) {
         super(button);

@@ -157,11 +157,13 @@ public class SquareView extends StyledButton {
 
     @Override
     public void normal() {
-        if (square.isContainer() || square.isMarked()) {
-            currentBackColor = disabledBackColor;
-            super.repaint();
-        } else {
-            super.normal();
+        if(!isActiveState()) {
+            if (square.isContainer() || square.isMarked()) {
+                currentBackColor = disabledBackColor;
+                super.repaint();
+            } else {
+                super.normal();
+            }
         }
     }
 

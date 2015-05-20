@@ -1,5 +1,6 @@
 package application.Controllers.EditLevelScreen.BasicsPreference;
 
+import application.Controllers.EditLevelScreen.ChangePreferenceController;
 import application.Models.Levels.Level;
 import application.Models.Levels.LightningLevel;
 import application.Models.Levels.PuzzleLevel;
@@ -7,19 +8,14 @@ import application.Views.Screens.EditLevelScreenPackage.EditLevelScreen;
 
 import javax.swing.*;
 import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 
 /**
  * Created by harryliu on 5/19/15.
  */
-public class ChangeNumberLimitController implements ActionListener {
-
-    EditLevelScreen editLevelScreen;
-    JTextField numberTextField;
+public class ChangeNumberLimitController extends ChangePreferenceController {
 
     public ChangeNumberLimitController(EditLevelScreen editLevelScreen, JTextField numberTextField) {
-        this.editLevelScreen = editLevelScreen;
-        this.numberTextField = numberTextField;
+        super(editLevelScreen, numberTextField);
     }
 
     @Override

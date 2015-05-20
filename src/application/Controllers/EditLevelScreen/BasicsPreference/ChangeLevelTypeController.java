@@ -1,7 +1,9 @@
 package application.Controllers.EditLevelScreen.BasicsPreference;
 
 import application.Contracts.LevelTypeContract;
+import application.Models.Grid;
 import application.Views.Screens.EditLevelScreenPackage.EditLevelScreen;
+import application.Views.Screens.EditLevelScreenPackage.SquareView;
 
 import javax.swing.*;
 import java.awt.event.ActionEvent;
@@ -22,16 +24,16 @@ public class ChangeLevelTypeController implements ActionListener {
     public void actionPerformed(ActionEvent e) {
         switch (((JComboBox) e.getSource()).getSelectedIndex()) {
             case LevelTypeContract.PUZZLE:
-                editLevelScreen.setLevel(LevelTypeContract.generateDefaultPuzzleLevel());
+                editLevelScreen.setLevel(LevelTypeContract.generateDefaultPuzzleLevel(editLevelScreen.getLevelId()));
                 break;
             case LevelTypeContract.LIGHTNING:
-                editLevelScreen.setLevel(LevelTypeContract.generateDefaultLightningLevel());
+                editLevelScreen.setLevel(LevelTypeContract.generateDefaultLightningLevel(editLevelScreen.getLevelId()));
                 break;
             case LevelTypeContract.ELIMINATION:
-                editLevelScreen.setLevel(LevelTypeContract.generateDefaultEliminationLevel());
+                editLevelScreen.setLevel(LevelTypeContract.generateDefaultEliminationLevel(editLevelScreen.getLevelId()));
                 break;
             case LevelTypeContract.RELEASE:
-                editLevelScreen.setLevel(LevelTypeContract.generateDefaultReleaseLevel());
+                editLevelScreen.setLevel(LevelTypeContract.generateDefaultReleaseLevel(editLevelScreen.getLevelId()));
                 break;
         }
 

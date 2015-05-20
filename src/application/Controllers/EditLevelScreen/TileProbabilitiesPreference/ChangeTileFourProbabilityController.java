@@ -23,7 +23,7 @@ public class ChangeTileFourProbabilityController extends ChangePreferenceControl
 
         try {
             long probability = Long.parseLong(numberTextField.getText());
-            level.getGrid().getProbabilities().getTileOne().setValue(probability);
+            level.getGrid().getProbabilities().getTileFour().setValue(probability);
         } catch (Exception ex) {
             editLevelScreen.getLevelPreferencePanel().getTileProbabilityPanel().modelChanged();
         }

@@ -23,9 +23,9 @@ public class ChangeMultiplierTwoProbabilityController extends ChangePreferenceCo
 
         try {
             long probability = Long.parseLong(numberTextField.getText());
-            level.getGrid().getProbabilities().getTileTwo().setValue(probability);
+            level.getGrid().getProbabilities().getMultiplierTwo().setValue(probability);
         } catch (Exception ex) {
-            editLevelScreen.getLevelPreferencePanel().getTileProbabilityPanel().modelChanged();
+            editLevelScreen.getLevelPreferencePanel().getMultiplierProbabilityPanel().modelChanged();
         }
     }
 }

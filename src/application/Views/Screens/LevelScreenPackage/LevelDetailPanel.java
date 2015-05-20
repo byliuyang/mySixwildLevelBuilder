@@ -2,14 +2,14 @@ package application.Views.Screens.LevelScreenPackage;
 
 import application.Contracts.ImageContract;
 import application.Contracts.TextContact;
-import application.Controllers.ViewLevelScreen.StartLevelButtonController;
+import application.Contracts.TipContract;
+import application.Controllers.ViewLevelScreen.DeleteLevelButtonController;
+import application.Controllers.ViewLevelScreen.EditLevelButtonController;
 import application.Models.Levels.*;
 import application.Utilities;
 import application.Views.Application;
 import application.Views.Components.DetailPanel;
 import application.Views.Components.ImageButton;
-import application.Views.Components.LargeStarsView;
-import application.Views.Components.NavigationBar;
 
 import javax.swing.*;
 import java.awt.*;
@@ -38,17 +38,21 @@ public class LevelDetailPanel extends DetailPanel {
     //    Level introduction label bounds
     final Rectangle LEVEL_INTRO_BOUNDS = new Rectangle(320, 20, 480, 100);
 
-    //    Start level button size
-    final Dimension START_LEVEL_BUTTON_SIZE = new Dimension(140, 46);
+    //    Edit level button size
+    final Dimension EDIT_LEVEL_BUTTON_SIZE = new Dimension(60, 60);
 
-    //    Start level button bounds
-    final Rectangle START_LEVEL_BUTTON_BOUNDS = new Rectangle(850, 74, 140, 46);
+    //    Edit level button bounds
+    final Rectangle EDIT_LEVEL_BUTTON_BOUNDS = new Rectangle(838, 48, 60, 60);
 
-    //    Star view size
-    final Dimension STAR_VIEW_SIZE = new Dimension(96, 28);
+    //    Delete level button size
+    final Dimension DELETE_LEVEL_BUTTON_SIZE = new Dimension(60, 60);
 
-    //    Star view bounds
-    final Rectangle STAR_VIEW_BOUNDS = new Rectangle(893, 30, 96, 28);
+    //    Delete level button bounds
+    final Rectangle DELETE_LEVEL_BUTTON_BOUNDS = new Rectangle(918, 48, 60, 60);
+
+    final Color BUTTON_HOVERED_BACK_COLOR = new Color(86, 116, 87);
+
+    final int NO_ROUND = 0;
 
     final Rectangle PREVIEW_GRID_VIEW_BOUNDS = new Rectangle(6, 6, 142, 142);
 
@@ -59,9 +63,9 @@ public class LevelDetailPanel extends DetailPanel {
 
     JLabel levelIntroLabel;
 
-    LargeStarsView largeStars;
+    ImageButton editLevelButton;
 
-    ImageButton startLevelButton;
+    ImageButton deleteLevelButton;
 
     Level level;
 
@@ -101,13 +105,31 @@ public class LevelDetailPanel extends DetailPanel {
         levelIntroLabel.setBounds(LEVEL_INTRO_BOUNDS);
         add(levelIntroLabel);
 
-        
-
-        add(largeStars);
-        largeStars.repaint();
-
         getPreviewGridView().setBounds(PREVIEW_GRID_VIEW_BOUNDS);
         add(getPreviewGridView());
+
+//        Setup delete new level button
+        add(getDeleteLevelButton());
+        getDeleteLevelButton().setToolTipText(TipContract.DELETE_LEVEL_BUTTON_TIP);
+
+        getDeleteLevelButton().repaint();
+
+        DeleteLevelButtonController deleteLevelButtonController = new DeleteLevelButtonController(getDeleteLevelButton(), this, app);
+
+        getDeleteLevelButton().addMouseListener(deleteLevelButtonController);
+        getDeleteLevelButton().addMouseMotionListener(deleteLevelButtonController);
+
+//        Setup edit new level button
+        add(getEditLevelButton());
+        getEditLevelButton().setToolTipText(TipContract.EDIT_LEVEL_BUTTON_TIP);
+
+        getEditLevelButton().repaint();
+
+        EditLevelButtonController editLevelButtonController = new EditLevelButtonController(getEditLevelButton(), this, app);
+
+        getEditLevelButton().addMouseListener(editLevelButtonController);
+        getEditLevelButton().addMouseMotionListener(editLevelButtonController);
+
     }
 
     public void setLevel(Level level) {
@@ -144,8 +166,6 @@ public class LevelDetailPanel extends DetailPanel {
         levelTypeLabel.setText(levelType);
         levelIntroLabel.setText(levelIntro);
 
-        largeStars.setStar(level.getScore().getStarNumber());
-
         getPreviewGridView().initialize(level);
         getPreviewGridView().modelChanged();
     }
@@ -160,5 +180,53 @@ public class LevelDetailPanel extends DetailPanel {
 
     public Level getLevel() {
         return level;
+    }
+
+    public ImageButton getEditLevelButton() {
+        if (editLevelButton == null) {
+            editLevelButton = new ImageButton(
+                    ImageContract.EDIT_LEVEL_BUTTON_IMAGE,
+                    ImageContract.EDIT_LEVEL_BUTTON_IMAGE,
+                    ImageContract.EDIT_LEVEL_BUTTON_IMAGE,
+                    ImageContract.EDIT_LEVEL_BUTTON_IMAGE,
+                    DETAIL_PANEL_BACK_COLOR,
+                    BUTTON_HOVERED_BACK_COLOR,
+                    DETAIL_PANEL_BACK_COLOR,
+                    DETAIL_PANEL_BACK_COLOR,
+                    NO_ROUND
+            );
+
+            editLevelButton.setPreferredSize(EDIT_LEVEL_BUTTON_SIZE);
+            editLevelButton.setMinimumSize(EDIT_LEVEL_BUTTON_SIZE);
+            editLevelButton.setMaximumSize(EDIT_LEVEL_BUTTON_SIZE);
+
+            editLevelButton.setBounds(EDIT_LEVEL_BUTTON_BOUNDS);
+        }
+        return editLevelButton;
+    }
+
+    public ImageButton getDeleteLevelButton() {
+
+        if (deleteLevelButton == null) {
+            deleteLevelButton = new ImageButton(
+                    ImageContract.DELETE_LEVEL_BUTTON_IMAGE,
+                    ImageContract.DELETE_LEVEL_BUTTON_IMAGE,
+                    ImageContract.DELETE_LEVEL_BUTTON_IMAGE,
+                    ImageContract.DELETE_LEVEL_BUTTON_IMAGE,
+                    DETAIL_PANEL_BACK_COLOR,
+                    BUTTON_HOVERED_BACK_COLOR,
+                    DETAIL_PANEL_BACK_COLOR,
+                    DETAIL_PANEL_BACK_COLOR,
+                    NO_ROUND
+            );
+
+            deleteLevelButton.setPreferredSize(DELETE_LEVEL_BUTTON_SIZE);
+            deleteLevelButton.setMinimumSize(DELETE_LEVEL_BUTTON_SIZE);
+            deleteLevelButton.setMaximumSize(DELETE_LEVEL_BUTTON_SIZE);
+
+            deleteLevelButton.setBounds(DELETE_LEVEL_BUTTON_BOUNDS);
+        }
+
+        return deleteLevelButton;
     }
 }

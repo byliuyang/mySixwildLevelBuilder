@@ -1,7 +1,6 @@
 package application;
 
 import application.Models.Levels.Level;
-import application.Models.Value;
 import application.Views.Application;
 
 import java.awt.*;
@@ -29,6 +28,10 @@ public class Utilities {
     public static final int ONE_HUNDRED = 100;
     public static final int ZERO = 0;
 
+    //    Layers
+    public static final Integer BOTTOM_LAYER = new Integer(0);
+    public static final Integer TOP_LAYER = new Integer(1);
+
     public static Font normalFont;
 
     /**
@@ -54,7 +57,7 @@ public class Utilities {
         }
     }
 
-    public static void updateLevelState(Level level){
+    public static void updateLevelState(Level level) {
 
         long levelID = level.getId().getValue();
 
@@ -62,7 +65,7 @@ public class Utilities {
 
 //                Read level information from file
             ObjectInputStream objectInputStream = new ObjectInputStream(
-                    new FileInputStream(System.getProperty(Application.ROOT_PATH)+ Application.LEVEL_PATH + "/" + new Long(levelID).toString() + ".level")
+                    new FileInputStream(System.getProperty(Application.ROOT_PATH) + Application.LEVEL_PATH + "/" + new Long(levelID).toString() + ".level")
             );
 
 //                Track current score
@@ -80,6 +83,19 @@ public class Utilities {
 
         } catch (Exception e) {
             e.printStackTrace();
+        }
+    }
+
+    public static void saveLevelState(Level level) {
+
+        long levelID = level.getId().getValue();
+
+        try {
+            ObjectOutputStream objectOutputStream = new ObjectOutputStream(
+                    new FileOutputStream(System.getProperty(Application.ROOT_PATH) + Application.LEVEL_PATH + "/" + new Long(levelID).toString() + ".level"));
+            objectOutputStream.writeObject(level);
+        } catch (Exception ex) {
+            ex.printStackTrace();
         }
     }
 }

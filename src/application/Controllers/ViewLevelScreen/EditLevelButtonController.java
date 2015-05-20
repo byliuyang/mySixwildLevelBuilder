@@ -34,10 +34,9 @@ public class EditLevelButtonController extends ButtonController {
             ((LightningLevel) level).getTime().setCurrentTime(Utilities.ZERO);
         }
 
-        app.switchTo(app.getGameScreen());
+        app.switchTo(app.getEditLevelScreen());
 
-        app.getGameScreen().setLevel(level);
-        app.getGameScreen().initialize();
-        app.getGameScreen().modelChanged();
+        app.getEditLevelScreen().setLevel(level);
+        app.getEditLevelScreen().modelChanged();
     }
 }

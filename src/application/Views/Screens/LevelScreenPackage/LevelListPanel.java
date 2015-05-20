@@ -1,7 +1,6 @@
 package application.Views.Screens.LevelScreenPackage;
 
 import application.Models.Levels.Level;
-import application.Utilities;
 import application.Views.Components.ListPanel;
 
 import java.util.ArrayList;
@@ -19,11 +18,16 @@ public class LevelListPanel extends ListPanel {
         this.levels = levels;
 
         setPreferredSize(LIST_PANEL_SIZE);
-
         setUpViews();
         showViews();
+
+        activeFirstLevel();
+    }
+
+    public void activeFirstLevel() {
+        setActiveView(getViews().get(0));
         getViews().get(0).getButton().actived();
-        levelDetailPanel.setLevel(levels.get(0));
+        ((LevelDetailPanel) getDetailPanel()).setLevel(levels.get(0));
     }
 
     @Override
@@ -54,15 +58,11 @@ public class LevelListPanel extends ListPanel {
         }
     }
 
-    public void unlockLevel(long levelID) {
-        levels.get((int) levelID - 1).unlock();
-
-        Utilities.updateLevelState(levels.get((int) levelID - 1));
-        setUpViews();
-        showViews();
-    }
-
     public ArrayList<Level> getLevels() {
         return levels;
+    }
+
+    public void setLevels(ArrayList<Level> levels) {
+        this.levels = levels;
     }
 }
