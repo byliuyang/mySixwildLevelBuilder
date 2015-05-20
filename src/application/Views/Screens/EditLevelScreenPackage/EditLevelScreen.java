@@ -104,6 +104,7 @@ public class EditLevelScreen extends NavigableScreen implements IModelUpdated {
     }
 
     public GridView getGridView() {
+
         if (gridView == null) {
             gridView = new GridView(app, level);
         }
@@ -115,6 +116,8 @@ public class EditLevelScreen extends NavigableScreen implements IModelUpdated {
 
         if (level == null) {
             level = LevelTypeContract.generateDefaultPuzzleLevel(levelId);
+
+            setLevel(level);
         }
 
         return level;
@@ -168,6 +171,7 @@ public class EditLevelScreen extends NavigableScreen implements IModelUpdated {
     public void modelChanged() {
         getLevelPreferencePanel().modelChanged();
         getGridView().modelChanged();
+        ((EditLevelToolBar)getNavigationBar()).modelChanged();
     }
 
     public StyledButton getActiveView() {
@@ -187,6 +191,7 @@ public class EditLevelScreen extends NavigableScreen implements IModelUpdated {
     }
 
     public void setLevelId(int levelId) {
+
         this.levelId = levelId;
     }
 }

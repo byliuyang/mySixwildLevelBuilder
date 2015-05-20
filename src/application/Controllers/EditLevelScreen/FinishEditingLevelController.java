@@ -1,4 +1,4 @@
-package application.Controllers.ViewLevelScreen;
+package application.Controllers.EditLevelScreen;
 
 import application.Controllers.NavigationBar.GoBackButtonController;
 import application.Utilities;
@@ -21,6 +21,8 @@ public class FinishEditingLevelController extends GoBackButtonController {
         Utilities.saveLevelState(app.getEditLevelScreen().getLevel());
 
         app.getLevelsScreen().setUpLevelList();
+
+        app.getEditLevelScreen().setLevel(null);
 
         super.mouseClicked(e);
     }

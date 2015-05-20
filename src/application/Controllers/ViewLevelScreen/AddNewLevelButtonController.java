@@ -22,6 +22,8 @@ public class AddNewLevelButtonController extends ButtonController {
     public void mouseClicked(MouseEvent e) {
         app.getEditLevelScreen().setLevelId(app.getLevelsScreen().getNumberLevels() + 1);
         app.getEditLevelScreen().initialize();
+        app.getEditLevelScreen().modelChanged();
+
         app.switchTo(app.getEditLevelScreen());
     }
 }
