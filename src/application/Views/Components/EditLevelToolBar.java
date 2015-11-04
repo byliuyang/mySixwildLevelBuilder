@@ -4,9 +4,10 @@ import application.Contracts.ImageContract;
 import application.Contracts.TextContact;
 import application.Contracts.TipContract;
 import application.Controllers.NavigationBar.GoBackButtonController;
-import application.Controllers.ViewLevelScreen.FinishEditingLevelController;
+import application.Controllers.EditLevelScreen.FinishEditingLevelController;
 import application.Utilities;
 import application.Views.Application;
+import application.Views.IModelUpdated;
 
 import javax.swing.*;
 import java.awt.*;
@@ -14,7 +15,7 @@ import java.awt.*;
 /**
  * Created by harryliu on 5/14/15.
  */
-public class EditLevelToolBar extends NavigableBackToolBar {
+public class EditLevelToolBar extends NavigableBackToolBar implements IModelUpdated{
 
     //    Level label dimension
     final Dimension LEVEL_LABEL_SIZE = new Dimension(300, 58);
@@ -42,7 +43,10 @@ public class EditLevelToolBar extends NavigableBackToolBar {
     public EditLevelToolBar(Application app) {
         super(app);
         setBackButton();
+        initialize();
+    }
 
+    public void initialize(){
         setFinishEditingButton();
         setResetLevelButton();
 
@@ -106,7 +110,7 @@ public class EditLevelToolBar extends NavigableBackToolBar {
     public JLabel getCurrentLevelLabel() {
         if (currentLevelLabel == null) {
 
-            currentLevelLabel = new JLabel(TextContact.LEVEL + " " + app.getEditLevelScreen().getLevel().getId().toString());
+            currentLevelLabel = new JLabel();
 
             Utilities.normalFont = Utilities.normalFont.deriveFont(CURRENT_LEVEL_LABEL_FONT_SIZE);
 
@@ -127,5 +131,10 @@ public class EditLevelToolBar extends NavigableBackToolBar {
         }
 
         return currentLevelLabel;
+    }
+
+    @Override
+    public void modelChanged() {
+        getCurrentLevelLabel().setText(TextContact.LEVEL + " " + app.getEditLevelScreen().getLevel().getId().toString());
     }
 }

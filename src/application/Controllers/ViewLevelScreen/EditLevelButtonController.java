@@ -27,16 +27,11 @@ public class EditLevelButtonController extends ButtonController {
     @Override
     public void mouseClicked(MouseEvent e) {
         Level level = levelDetailPanel.getLevel();
-        level.getScore().setCurrentScore(Utilities.ZERO);
-
-        if (level instanceof LightningLevel) {
-
-            ((LightningLevel) level).getTime().setCurrentTime(Utilities.ZERO);
-        }
-
-        app.switchTo(app.getEditLevelScreen());
 
         app.getEditLevelScreen().setLevel(level);
+        app.getEditLevelScreen().initialize();
         app.getEditLevelScreen().modelChanged();
+
+        app.switchTo(app.getEditLevelScreen());
     }
 }

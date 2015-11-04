@@ -20,6 +20,9 @@ public class GoBackButtonController extends ButtonController {
 
     @Override
     public void mouseClicked(MouseEvent e) {
+
+        app.getLevelsScreen().setUpLevelList();
+        app.getEditLevelScreen().setLevel(null);
         app.switchTo(app.getLevelsScreen());
     }
 }

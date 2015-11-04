@@ -35,7 +35,7 @@ public class SquareViewController extends ButtonController {
 
             if (editLevelScreen.getActiveView().getNormalBackColor().equals(Color.WHITE)) {
 
-                editLevelScreen.getGridView().getGrid().removeSquare(row, column);
+                editLevelScreen.getGridView().getGrid().removeSquare(column, row);
                 editLevelScreen.getGridView().getSquareViews()[row][column].getSquare().setTile(null);
                 editLevelScreen.getGridView().getSquareViews()[row][column].setNormalBackColor(Color.WHITE);
             } else if(editLevelScreen.getActiveView() instanceof SquareView){
